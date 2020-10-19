@@ -28,3 +28,30 @@
 		}
 	}
 }
+.wrapper-footer{
+    box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.1);
+    border-top: 1px solid #c5c6c7;
+    padding: 25px 10px 30px 10px;
+    background: #353535;
+    clear: both;
+		
+	footer{
+		.colophon{
+			ol{
+				width: auto;
+  				float: right;
+ 				margin-top: 8px;
+				li{
+				  display: inline-block;
+  				  padding: 15px,30px;
+					a{
+					    color: #ff0012;
+  					    font: inherit;
+  				 	    text-decoration: none;
+  				 	    transition: all 0.1s linear 0s;
+					}
+				}
+			}
+		}
+	}
+}
