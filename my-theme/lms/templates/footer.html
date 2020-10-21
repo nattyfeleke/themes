@@ -21,7 +21,7 @@ from openedx.core.djangolib.markup import HTML, Text
       <ol>
           <li class="nav-colophon-01">
           <a id="about" href="${marketing_link('ABOUT')}">
-              ${_("About")}
+              ${_("About | ")}
           </a>
           </li>
           %if marketing_link('JOBS') and marketing_link('JOBS') != '#':
@@ -40,7 +40,7 @@ from openedx.core.djangolib.markup import HTML, Text
           %endif
           <li class="nav-colophon-04">
           <a id="faq" href="${marketing_link('FAQ')}">
-              ${_("FAQ")}
+              ${_("FAQ | ")}
           </a>
           </li>
           <li class="nav-colophon-05">
