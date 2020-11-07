@@ -55,9 +55,9 @@
 		margin: 0;
 		// transform: translate(-50%, -50%);
 		display: flex;
-		li:nth-child(2),li:nth-child(3),li:nth-child(4){
+		li{
 			list-style: none;
-			margin: 0 15px;
+			margin: 0 10px;
 			.fa{
 				font-size: 15px;
 				line-height: 30px;
@@ -84,6 +84,8 @@
 		}
 		li:nth-child(1) a:hover{
 			background-color: #3b5999 ;
+			margin-right: 10px;
+			margin-left: 0;
 		}
 		li:nth-child(2) a:hover{
 			background-color: #55acee ;
