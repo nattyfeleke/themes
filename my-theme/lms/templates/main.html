@@ -281,7 +281,54 @@ from pipeline_mako import render_require_js_path_overrides
 .slick-arrow.slick-hidden {
     display: none;
 }
-
+.social-menu ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li{
+    list-style: none;
+	margin: 0 10px
+}
+.social-menu ul li .fa{
+    font-size: 15px;
+	line-height: 30px;
+	transition: .6s;
+	color: black;
+}
+.social-menu ul li .fa:hover{
+    color: #fff;
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+}
+.social-menu ul li a:hover{
+    transform: translate(0, 10px);   
+}
+.social-menu ul li:nth-child(1){
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #3b5999 ;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #55acee ;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #e4405f ;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #0077B5 ;
+}
 </style>
 
   <% ga_acct = static.get_value("GOOGLE_ANALYTICS_ACCOUNT", settings.GOOGLE_ANALYTICS_ACCOUNT) %>
