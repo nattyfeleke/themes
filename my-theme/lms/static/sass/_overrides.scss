@@ -82,10 +82,12 @@
 				transform: translate(0, 10px);
 			}
 		}
+		li:nth-child(1){
+			margin-left: 0px;
+			margin-right: 10px;
+		}
 		li:nth-child(1) a:hover{
 			background-color: #3b5999 ;
-			margin-right: 10px;
-			margin-left: 0;
 		}
 		li:nth-child(2) a:hover{
 			background-color: #55acee ;
