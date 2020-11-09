@@ -24,21 +24,9 @@ from openedx.core.djangolib.markup import HTML, Text
     <!-- This is super-ugly, don't use it! -->
     <div class="colophon">
       <nav class="nav-colophon" aria-label="${_('About')}">
-      <ol style="
-          width: auto;
-  				float: right;
- 				  margin-top: 8px;
-                 ">
-          <li class="nav-colophon-01" style="
-            display: inline-block;
-  				  padding: 15px,30px;
-                                             ">
-          <a id="about" href="${marketing_link('ABOUT')}" style=" 
-                color: #ff0012;
-  					    font: inherit;
-  				 	    text-decoration: none;
-  				 	    transition: all 0.1s linear 0s;
-                                                                 ">
+      <ol >
+          <li class="nav-colophon-01" >
+          <a id="about" href="${marketing_link('ABOUT')}" >
               ${_("About ")}
           </a>|
           </li>
@@ -56,29 +44,13 @@ from openedx.core.djangolib.markup import HTML, Text
               </a>
             </li>
           %endif
-          <li class="nav-colophon-04" style="
-            display: inline-block;
-  				  padding: 15px,30px;
-                                             ">
-          <a id="faq" href="${marketing_link('FAQ')}" style=" 
-                color: #ff0012;
-  					    font: inherit;
-  				 	    text-decoration: none;
-  				 	    transition: all 0.1s linear 0s;
-                                                                 ">
+          <li class="nav-colophon-04" >
+          <a id="faq" href="${marketing_link('ABOUT')}#" >
               ${_(" FAQ ")}
           </a>|
           </li>
-          <li class="nav-colophon-05" style="
-            display: inline-block;
-  				  padding: 15px,30px;
-                                             ">
-          <a id="contact" href="${marketing_link('CONTACT')}" style=" 
-                color: #ff0012;
-  					    font: inherit;
-  				 	    text-decoration: none;
-  				 	    transition: all 0.1s linear 0s;
-                                                                 ">
+          <li class="nav-colophon-05" >
+          <a id="contact" href="${marketing_link('ABOUT')}#" >
               ${_(" Contact")}
           </a>
           </li>
@@ -100,17 +72,17 @@ from openedx.core.djangolib.markup import HTML, Text
       </div>
       <div class="social-menu">
         <ul style="padding: 0%; margin: 0%;">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/traingobeze/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/traingobeze" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/traingobeze/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/traingobeze/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 
         </ul>
 
       </div>
       <p class="copyright" style=" 
               text-align: left;
-			        margin: 5px 0 8px;
+			        margin: 25px 0 8px;
 			        font-size: 0.8em;
 			        color: #767676;
                                   ">&copy; ${datetime.now(pytz.timezone(settings.TIME_ZONE)).year} Gobeze Consult.</p>
