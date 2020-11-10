@@ -37,7 +37,7 @@
 	background-position: 50%;
 	@include responsive(tab){
 		.home > header {
-			background: url('../images/bg-pic.png');
+			background: url('../images/bg-pic-tab.png');
 			background-size: cover;
 			background-position: 50%;
 		}	
