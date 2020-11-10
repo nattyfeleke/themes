@@ -47,6 +47,21 @@
 	}
 }
 
+@mixin responsive($breakpoint) {
+	@if $breakpoint == tab {
+		@media only screen and (max-width: 900px) {
+			@content
+		};
+	}
+}
+
+@include responsive(tab){
+	.home > header {
+		background: url('../images/bg-pic-tab.png');
+		background-size: cover;
+		background-position: 50%;
+	}	
+}
 
 // .wrapper-footer{
 //     box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.1);
