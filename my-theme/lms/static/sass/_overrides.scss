@@ -1,11 +1,17 @@
-@mixin responsive($breakpoint) {
-	@if $breakpoint == tab {
-		@media only screen and (max-width: 900px) {
-			@content
-		};
-	}
-}
-
+// @mixin responsive($breakpoint) {
+// 	@if $breakpoint == tab {
+// 		@media only screen and (max-width: 900px) {
+// 			@content
+// 		};
+// 	}
+// }
+// @include responsive(tab){
+// 	.home > header {
+// 		background: url('../images/bg-pic-tab.png');
+// 		background-size: cover;
+// 		background-position: 50%;
+// 	}	
+// }
 
 
 .global-header{
@@ -35,13 +41,7 @@
 	background: url('../images/bg-pic.png');
 	background-size: cover;
 	background-position: 50%;
-	@include responsive(tab){
-		.home > header {
-			background: url('../images/bg-pic-tab.png');
-			background-size: cover;
-			background-position: 50%;
-		}	
-	}
+	
 	.outer-wrapper {
 		padding-top: 150px;
 	    padding-bottom: 150px;
