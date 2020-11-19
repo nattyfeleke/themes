@@ -62,16 +62,19 @@
 		}
 	}
 }
-
+.courses-container .courses .course .course-info {
+    height: 180px;
+    font-family: arial;
+}
 .courses-container .courses .course .course-info .course-title {
     line-height: 23.68px;
-    margin: 5px 0 0px 0;
+    margin: 15px 0 0px 0;
     padding: 0 15px;
     height: 35px;
     color: #ff0012;
 }
 .courses-container .courses .course .course-info .course-date {
-    line-height: 150.72px;
+    line-height: 122.72px;
     padding: 2px 15px;
 }
 
