@@ -63,30 +63,30 @@
 	}
 }
 /*Teach with Us Section */
-.teach-with-us{
+.teach-with-us {
 	background: url('../images/bg-teach.jpg') no-repeat;
 	background-size: cover;
 	background-position: 50%;
 	text-align: center;
-	
+	.transbox {
+		background: rgba(237, 27, 45, 0.6);
+		padding-bottom: 12px;
+	}
+	h1.teach-big {
+		color: white;
+		font-size: 6rem;
+		letter-spacing: 3px;
+		margin: 0;
+		padding: 0;
+	}
+	p.teach-small {
+		color: white;
+		margin: 0 0 10px 0;
+		padding: 0;
+	}
 }
-.teach-with-us .transbox{
-	background: rgba(237, 27, 45, 0.6);
-	padding-bottom: 12px;
-	
-}
-.teach-with-us h1.teach-big{
-    color: white;
-	font-size: 6rem;
-	letter-spacing: 3px;
-	margin: 0;
-	padding: 0;
-}
-.teach-with-us p.teach-small{
-	color: white;
-	margin: 0 0 10px 0;
-	padding: 0;
-}
+
+
 
 .courses-container .courses .course .course-info {
     height: 180px;
