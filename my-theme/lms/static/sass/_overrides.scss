@@ -62,25 +62,6 @@
 		}
 	}
 }
-// .courses-container {
-// 	background-color: #d9d9d9;
-// }
-.courses-container .courses .course .course-info {
-    height: 180px;
-    font-family: arial;
-}
-.courses-container .courses .course .course-info .course-title {
-    line-height: 23.68px;
-    margin: 15px 0 0px 0;
-    padding: 0 15px;
-    height: 35px;
-    color: #000;
-}
-.courses-container .courses .course .course-info .course-date {
-    line-height: 122.72px;
-    padding: 2px 15px;
-}
-
 /*Teach with Us Section */
 .teach-with-us{
 	background: url('../images/bg-teach.jpg') no-repeat;
@@ -106,6 +87,24 @@
 	margin: 0 0 10px 0;
 	padding: 0;
 }
+
+.courses-container .courses .course .course-info {
+    height: 180px;
+    font-family: arial;
+}
+.courses-container .courses .course .course-info .course-title {
+    line-height: 23.68px;
+    margin: 15px 0 0px 0;
+    padding: 0 15px;
+    height: 35px;
+    color: #000;
+}
+.courses-container .courses .course .course-info .course-date {
+    line-height: 122.72px;
+    padding: 2px 15px;
+}
+
+
 // .wrapper-footer{
 //     box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.1);
 //     border-top: 1px solid #c5c6c7;
