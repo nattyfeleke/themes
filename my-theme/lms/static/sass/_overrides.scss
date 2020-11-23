@@ -71,13 +71,14 @@
 }
 .jumbo .jumbo-content h1{
 	color: crimson;
-	font-size: 3rem;
+	text-align: initial;
+	font-size: 2.5rem;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 15px;
 }
 .jumbo .jumbo-content h1 span{
-	font-size: 4.5rem;
+	font-size: 3.5rem;
 
 }
 .jumbo .jumbo-content h2{
@@ -89,8 +90,8 @@
 }
 .jumbo .jumbo-content p{
 	color: rgb(73, 73, 73);
-	font-size: 1.5rem;
-	/* letter-spacing: .15rem; */
+	font-size: 1.55rem;
+	line-height: 1.9rem;
 	word-spacing: .5rem;
 	padding: 0;
 	margin: 0;
@@ -100,7 +101,7 @@
 }
 .jumbo .jumbo-content p.gobeze-member{
 	color: white;
-	font-size: 1rem;
+	font-size: .7rem;
 	text-align: right;
 	word-spacing: normal;
 	padding: 0;
