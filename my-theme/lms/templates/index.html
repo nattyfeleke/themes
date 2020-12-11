@@ -9,34 +9,38 @@ from openedx.core.djangolib.markup import HTML, Text
 %>
 
 <main id="main" aria-label="Content" tabindex="-1">
-    <section class="home">
-      <header>
+  <section class="home">
+    <header>
+      <div class="outer-wrapper">
+        <div class="title">
+          <div class="heading-group">
+            % if homepage_overlay_html:
+            ${homepage_overlay_html | n, decode.utf8}
+            % else:
+            <%include file="index_overlay.html" />
+              % endif
+            </div>
+            % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
+              <div class="course-search">
+                <form method="get" action="/courses">
+                  <label><span class="sr">${_("Search for a course")}</span>
+                    <input class="search-input" name="search_query" type="text" placeholder="${_("Search for a course")}"></input>
+                  </label>
+                  <button class="search-button" type="submit">
+                    <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
+                  </button>
+                </form>
+              </div>
+            % endif
 
-        <div class="jumbo">
-          <div class="jumbo-content">
-          <h1>Helping <span class="bigh1">Good People WIN.</span></h1>
-          <h2>Buisness and Digital Skills for Dreamers</h2>
-          <p>Register for <span class="free">Free</span> and enjoy a growing number<br/>of Online training programs from  Gobeze<br/>Training and other partners.</p>
-          <p class="gobeze-member"><sup>*</sup>Gobeze is a founding member of Startup Ethiopia and member of Social Enterprise Ethiopia.</p>
-      </div>
-      </div>
+          </div>
 
-        % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
-        <div class="course-search">
-          <form method="get" action="/courses">
-            <label><span class="sr">${_("Search for a course")}</span>
-              <input class="search-input" name="search_query" type="text" placeholder="${_("Search for a course")}"></input>
-            </label>
-            <button class="search-button" type="submit">
-              <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
-            </button>
-          </form>
+          <%include file="index_promo_video.html" />
         </div>
-      % endif
 
       </header>
       <div class="our-stud">
-        <p>Students attending our classes are coming from these companies.</p>
+        <p>People who have attended our programs power some of the best companies in Ethiopia.</p>
         <p class="line-for-stud"></p>
       </div>
       <div class="row">
@@ -55,7 +59,7 @@ from openedx.core.djangolib.markup import HTML, Text
       </div>
 
       <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function () {
           $('.customer-logos').slick({
             slidesToShow: 6,
             slidesToScroll: 1,
@@ -63,8 +67,8 @@ from openedx.core.djangolib.markup import HTML, Text
             autoplaySpeed: 1000,
             arrows: false,
             dots: false,
-              pauseOnHover: false,
-              responsive: [{
+            pauseOnHover: false,
+            responsive: [{
               breakpoint: 768,
               settings: {
                 slidesToShow: 4
@@ -94,18 +98,18 @@ from openedx.core.djangolib.markup import HTML, Text
 
 <%block name="js_extra">
    <script type="text/javascript">
-      $(window).load(function() {
-         if(getParameterByName('next')) {
-              $('#login').trigger("click");
-         }
-      })
-   </script>
+    $(window).load(function () {
+      if (getParameterByName('next')) {
+        $('#login').trigger("click");
+      }
+    })
+  </script>
 </%block>
 
 % if show_signup_immediately is not UNDEFINED:
   ## NOTE: This won't work in production, because anonymous views are cached, so it will
   ## show either with or without this extra js for 3 minutes at a time.
 <script type="text/javascript">
-  $(window).load(function() {$('#signup_action').trigger("click");});
+  $(window).load(function () { $('#signup_action').trigger("click"); });
 </script>
 % endif
