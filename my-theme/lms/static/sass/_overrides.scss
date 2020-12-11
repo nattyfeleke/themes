@@ -24,31 +24,13 @@
 	max-height: 40px;
 }
 
-// .home > header {
-// 	background: url('../images/bg-pic.png');
-// 	background-size: cover;
-// 	background-position: 50%;
+.home > header {
 	
-// 	.outer-wrapper {
-// 		padding-top: 150px;
-// 	    padding-bottom: 150px;
-// 	}
-// 	.title {
-// 		background: transparent;
-// 		box-shadow: none;
-// 		margin-left: 0;
-
-// 		> .heading-group h1 {
-//                         font-size: 180px;
-// 			color: #66D8F2;
-// 			text-shadow: none;
-// 		}
-// 		> .heading-group p {
-// 			font-size: 50px;
-// 			color: #fff;
-// 		}
-// 	}
-// }
+	.outer-wrapper {
+		padding: 0;
+	}
+	
+}
 /*Jumbo styles*/
 .jumbo{
 	font-family: Arial, Helvetica, sans-serif;
