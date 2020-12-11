@@ -22,7 +22,7 @@ from openedx.core.djangolib.markup import HTML, Text
       </div>
       </div>
 
-        <div class="title">
+
           
             % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
               <div class="course-search">
@@ -37,7 +37,6 @@ from openedx.core.djangolib.markup import HTML, Text
               </div>
             % endif
 
-          </div>
 
           <%include file="index_promo_video.html" />
         </div>
