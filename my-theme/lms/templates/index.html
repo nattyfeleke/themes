@@ -8,97 +8,95 @@
     <section class="home">
       <header>
         <div class="outer-wrapper">
-          <div class="title">
 
-            <div class="jumbo">
-              <div class="jumbo-content">
-                <div class="text-area">
-                  <h2>This is Gobeze</h2>
-                  <p>Learn 100% online with working profesionals and industry experts. <br /><span class="hide-sm">
-                      Develop hobbies, new skills
-                      and
-                      career-changing expertise with our <br />flexible courses.</span></p>
-                  <div class="jumbo-btn">
-                    <a href="#"> <b> Explore Courses</b></a>
-                  </div>
+          <div class="jumbo">
+            <div class="jumbo-content">
+              <div class="text-area">
+                <h2>This is Gobeze</h2>
+                <p>Learn 100% online with working profesionals and industry experts. <br /><span class="hide-sm">
+                    Develop hobbies, new skills
+                    and
+                    career-changing expertise with our <br />flexible courses.</span></p>
+                <div class="jumbo-btn">
+                  <a href="#"> <b> Explore Courses</b></a>
                 </div>
               </div>
             </div>
-            <!-- End Jumbo -->
-            <!-- Why Gobeze? -->
-            <section id="why-gobeze">
-              <div class="con">
-                <div class="title">
-                  <h2>Why Gobeze?</h2>
-                </div>
-                <div class="cards">
-                  <div class="card">
-                    <div class="ic">
-                      <i class="fab fa-leanpub"></i>
-                    </div>
-                    <h3>Learn anything</h3>
-                    <p>Whether you want to develop as a professional or discover a new hobby, there's an online course
-                      for that. You can even take your learning further with online programs and degrees.</p>
-                  </div>
-                  <div class="card">
-                    <div class="ic">
-                      <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Learn together</h3>
-                    <p>Join other people from around the world learning together. Online learning is as easy and
-                      natural as chatting with a group of friends.</p>
-                  </div>
-                  <div class="card">
-                    <div class="ic">
-                      <i class="fas fa-user-check"></i>
-                    </div>
-                    <h3>Learn with experts</h3>
-                    <p>Meet educators and working proffesionals and experts, who'll share their experience
-                      through videos, articles, quizzes and discussions.</p>
-                  </div>
-                </div>
-
-              </div>
-            </section>
-            <!--End Why Gobeze? -->
-
-            <!-- Learn with us & Teach with Us  -->
-            <section id="learn-teach">
-              <div class="holder">
-                <div class="sec-r" style="background-image:url('./assets/images/t.jpg')">
-                  <h2>Learn with Us</h2>
-                  <p>Career-changing courses with a flexible monthly subscription and 7-day free trial</p>
-                  <div class="learn">
-                    <a href="#"><b>Explore Courses</b></a>
-                  </div>
-                </div>
-                <div class="sec-l" style="background-image:url('./assets/images/t.jpg')">
-                  <h2>Teach with Us</h2>
-                  <p>Learn more about our new course portfolio for professional learners our new course portfolio for
-                  </p>
-                  <div class="learn">
-                    <a href="./teach.html"><b>Find out more</b></a>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!--End Learn with us & Teach with Us  -->
-
-            % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
-            <div class="course-search">
-              <form method="get" action="/courses">
-                <label><span class="sr">${_("Search for a course")}</span>
-                  <input class="search-input" name="search_query" type="text" placeholder="${_(" Search for a
-                    course")}"></input>
-                </label>
-                <button class="search-button" type="submit">
-                  <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
-                </button>
-              </form>
-            </div>
-            % endif
-
           </div>
+          <!-- End Jumbo -->
+          <!-- Why Gobeze? -->
+          <section id="why-gobeze">
+            <div class="con">
+              <div class="title">
+                <h2>Why Gobeze?</h2>
+              </div>
+              <div class="cards">
+                <div class="card">
+                  <div class="ic">
+                    <i class="fab fa-leanpub"></i>
+                  </div>
+                  <h3>Learn anything</h3>
+                  <p>Whether you want to develop as a professional or discover a new hobby, there's an online course
+                    for that. You can even take your learning further with online programs and degrees.</p>
+                </div>
+                <div class="card">
+                  <div class="ic">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <h3>Learn together</h3>
+                  <p>Join other people from around the world learning together. Online learning is as easy and
+                    natural as chatting with a group of friends.</p>
+                </div>
+                <div class="card">
+                  <div class="ic">
+                    <i class="fas fa-user-check"></i>
+                  </div>
+                  <h3>Learn with experts</h3>
+                  <p>Meet educators and working proffesionals and experts, who'll share their experience
+                    through videos, articles, quizzes and discussions.</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <!--End Why Gobeze? -->
+
+          <!-- Learn with us & Teach with Us  -->
+          <section id="learn-teach">
+            <div class="holder">
+              <div class="sec-r" style="background-image:url('./assets/images/t.jpg')">
+                <h2>Learn with Us</h2>
+                <p>Career-changing courses with a flexible monthly subscription and 7-day free trial</p>
+                <div class="learn">
+                  <a href="#"><b>Explore Courses</b></a>
+                </div>
+              </div>
+              <div class="sec-l" style="background-image:url('./assets/images/t.jpg')">
+                <h2>Teach with Us</h2>
+                <p>Learn more about our new course portfolio for professional learners our new course portfolio for
+                </p>
+                <div class="learn">
+                  <a href="./teach.html"><b>Find out more</b></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--End Learn with us & Teach with Us  -->
+
+          % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
+          <div class="course-search">
+            <form method="get" action="/courses">
+              <label><span class="sr">${_("Search for a course")}</span>
+                <input class="search-input" name="search_query" type="text" placeholder="${_(" Search for a
+                  course")}"></input>
+              </label>
+              <button class="search-button" type="submit">
+                <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
+              </button>
+            </form>
+          </div>
+          % endif
+
 
           <%include file="index_promo_video.html" />
         </div>
