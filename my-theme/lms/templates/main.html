@@ -395,7 +395,7 @@ from pipeline_mako import render_require_js_path_overrides
         .social-menu ul li:nth-child(3) a:hover {
             background-color: #e4405f;
         }
-            
+
         .social-menu ul li:nth-child(4) a:hover {
             background-color: #0077B5;
         }
@@ -3329,7 +3329,7 @@ from pipeline_mako import render_require_js_path_overrides
 
       <div class="marketing-hero"><%block name="marketing_hero"></%block></div>
 
-      <div class="content-wrapper main-container" id="content" dir="${static.dir_rtl()}">
+      <div class="content-wrapper main-container" id="content" style="padding: 0;" dir="${static.dir_rtl()}">
         ${self.body()}
         <%block name="bodyextra"/>
     </div>
