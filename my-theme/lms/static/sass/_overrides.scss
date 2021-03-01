@@ -71,13 +71,17 @@
   position: absolute;
   top: 100px;
   right: 10%;
+  font-family: Arial;
 }
 .text-area h2 {
   font-size: 3.5rem;
+  font-family: Arial;
+  color: white;
   line-height: 1.25;
 }
 .text-area p {
   margin-top: 10px;
+  font-family: Arial;
   font-size: 1rem;
   line-height: 2;
 }
@@ -121,6 +125,10 @@
 .con .titles {
   font-size: 2rem;
   line-height: 1.25;
+}
+.con .titles h2{
+  color: #040707;
+  font-family: Arial;
 }
 .con .cards {
   text-align: center;
@@ -172,6 +180,9 @@
   background-position: 50%;
   background-repeat: no-repeat;
 }
+#learn-teach .holder .sec-r h1 {
+  font-family: Arial;
+}
 #learn-teach .holder .sec-l {
   background-image:url('../images/t.jpg');
   width: 50%;
@@ -179,6 +190,9 @@
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
+}
+#learn-teach .holder .sec-l h1 {
+  font-family: Arial;
 }
 #learn-teach .holder h2 {
 }
