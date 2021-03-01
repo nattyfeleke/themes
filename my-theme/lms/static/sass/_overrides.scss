@@ -49,6 +49,156 @@
 		}
 	}
 }*/
+
+/*Style for the Jumbo*/
+.jumbo {
+  background-image: url('../images/wes-hicks-4-EeTnaC1S4-unsplash.jpg');
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jumbo .jumbo-content {
+  position: relative;
+  height: 400px;
+
+  background: rgba(237, 27, 45, 0.6);
+}
+.text-area {
+  color: white;
+  position: absolute;
+  top: 100px;
+  right: 10%;
+}
+.text-area h2 {
+  font-size: 3.5rem;
+  line-height: 1.25;
+}
+.text-area p {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 2;
+}
+.jumbo-content .jumbo-btn {
+  margin-top: 10px;
+  padding: 0.4rem;
+  background-color: #ed1b2d;
+  color: white;
+  width: fit-content;
+  border-radius: 6px;
+  transition: background-color .4s;
+  cursor: pointer;
+  /* transition: color 1s; */
+}
+.jumbo-content .jumbo-btn:hover {
+  background-color: #040707;
+  /* color: #040707; */
+}
+.jumbo-content .jumbo-btn a {
+  text-align: center;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.jumbo-content .jumbo-btn a:hover {
+  /* color: #040707; */
+}
+
+/*Style for Why Gobeze Section*/
+#why-gobeze {
+  margin: 50px 0;
+  text-align: center;
+  /* font-size: 26px; */
+  color: #040707;
+}
+.con {
+  color: #040707;
+  margin: 10px 8%;
+}
+.con .title {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+.con .cards {
+  text-align: center;
+  margin: 50px 0;
+  display: flex;
+}
+.cards .card {
+  /* border: 1px solid black; */
+  position: relative;
+  width: 28%;
+  margin-right: 6%;
+  flex-grow: 1;
+}
+.cards .card:last-child {
+  margin-right: 0;
+}
+.cards .card .ic {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cards .card h3 {
+  text-align: left;
+  margin-top: 35px;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+.cards .card p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 2;
+  text-align: left;
+}
+
+/*Styles for Learners and Gobeze for Business*/
+#learn-teach {
+  margin-top: 30px;
+}
+#learn-teach .holder {
+  display: flex;
+  color: white;
+}
+#learn-teach .holder .sec-r {
+  width: 50%;
+  padding: 6% 6% 6% 8%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+#learn-teach .holder .sec-l {
+  width: 50%;
+  padding: 6% 8% 6% 6%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+#learn-teach .holder h2 {
+}
+#learn-teach .holder p {
+  margin-top: 10px;
+  font-size: 1 rem;
+  line-height: 1.5;
+}
+#learn-teach .holder .learn {
+  margin-top: 10px;
+  width: 160px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+#learn-teach .holder .learn a {
+  text-decoration: none;
+  color: white;
+}
+#learn-teach .holder .learn:hover {
+  background-color: #ed1b2d;
+}
+
 /*Teach with Us Section */
 .teach-with-us {
 	background: url('../images/bg-teach.jpg') no-repeat;
