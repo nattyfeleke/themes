@@ -49,6 +49,9 @@
 		}
 	}
 }*/
+.home > header {
+	background: none;
+}
 
 /*Style for the Jumbo*/
 .jumbo {
@@ -115,7 +118,7 @@
   color: #040707;
   margin: 10px 8%;
 }
-.con .title {
+.con .titles {
   font-size: 2rem;
   line-height: 1.25;
 }
