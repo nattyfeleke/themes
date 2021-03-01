@@ -1,40 +1,41 @@
-<%page expression_filter="h" />
+<%page expression_filter="h"/>
 <%inherit file="main.html" />
-<%namespace name='static' file='static_content.html' />
-<%! from django.utils.translation import ugettext as _ from django.urls import reverse from
-  openedx.core.djangolib.markup import HTML, Text %>
+<%namespace name='static' file='static_content.html'/>
+<%!
+from django.utils.translation import ugettext as _
+from django.urls import reverse
 
-  <main id="main" aria-label="Content" tabindex="-1">
-    <section class="home">
-      <header>
-        <div class="outer-wrapper">
+from openedx.core.djangolib.markup import HTML, Text
+%>
 
-          <div class="jumbo">
-            <div class="jumbo-content">
-              <h1>Helping <span class="bigh1">Good People WIN.</span></h1>
-              <h2>Buisness and Digital Skills for Dreamers</h2>
-              <p>Register for <span class="free">Free</span> and enjoy a growing number<br />of Online training programs
-                from Gobeze<br />Training and other partners.</p>
-              <p class="gobeze-member"><sup>*</sup>Gobeze is a founding member of Startup Ethiopia and member of Social
-                Enterprise Ethiopia.</p>
-            </div>
-          </div>
+<main id="main" aria-label="Content" tabindex="-1">
+  <section class="home">
+    <header>
+      <div class="outer-wrapper">
+
+        <div class="jumbo">
+          <div class="jumbo-content">
+          <h1>Helping <span class="bigh1">Good People WIN.</span></h1>
+          <h2>Buisness and Digital Skills for Dreamers</h2>
+          <p>Register for <span class="free">Free</span> and enjoy a growing number<br/>of Online training programs from  Gobeze<br/>Training and other partners.</p>
+          <p class="gobeze-member"><sup>*</sup>Gobeze is a founding member of Startup Ethiopia and member of Social Enterprise Ethiopia.</p>
+      </div>
+      </div>
 
 
-
-          % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
-          <div class="course-search">
-            <form method="get" action="/courses">
-              <label><span class="sr">${_("Search for a course")}</span>
-                <input class="search-input" name="search_query" type="text" placeholder="${_(" Search for a
-                  course")}"></input>
-              </label>
-              <button class="search-button" type="submit">
-                <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
-              </button>
-            </form>
-          </div>
-          % endif
+          
+            % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
+              <div class="course-search">
+                <form method="get" action="/courses">
+                  <label><span class="sr">${_("Search for a course")}</span>
+                    <input class="search-input" name="search_query" type="text" placeholder="${_("Search for a course")}"></input>
+                  </label>
+                  <button class="search-button" type="submit">
+                    <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
+                  </button>
+                </form>
+              </div>
+            % endif
 
 
           <%include file="index_promo_video.html" />
@@ -48,16 +49,16 @@
       <div class="row">
         <div class="container">
           <section class="customer-logos slider">
-            <div class="slide"><img src="${static.url(" images/cactus.png")}"></div>
-            <div class="slide"><img src="${static.url(" images/bc.png")}"></div>
-            <div class="slide"><img src="${static.url(" images/cocacola.png")}"></div>
-            <div class="slide"><img src="${static.url(" images/diago.png")}"></div>
-            <div class="slide"><img src="${static.url(" images/ethioairlines.png")}"></div>
-            <div class="slide"><img src="${static.url(" images/giz.png")}"></div>
-            <div class="slide"><img src="${static.url(" images/iceaddis.png")}"></div>
-            <div class="slide"><img src="${static.url(" images/rfc.png")}"></div>
+            <div class="slide"><img src="${static.url("images/cactus.png")}"></div>
+            <div class="slide"><img src="${static.url("images/bc.png")}"></div>
+            <div class="slide"><img src="${static.url("images/cocacola.png")}"></div>
+            <div class="slide"><img src="${static.url("images/diago.png")}"></div>
+            <div class="slide"><img src="${static.url("images/ethioairlines.png")}"></div>
+            <div class="slide"><img src="${static.url("images/giz.png")}"></div>
+            <div class="slide"><img src="${static.url("images/iceaddis.png")}"></div>
+            <div class="slide"><img src="${static.url("images/rfc.png")}"></div>
           </section>
-        </div>
+        </div>  
       </div>
 
       <script type="text/javascript">
@@ -88,32 +89,30 @@
       <%include file="${courses_list}" />
 
     </section>
-  </main>
+</main>
 
-  % if show_homepage_promo_video:
+% if show_homepage_promo_video:
   <section id="video-modal" class="modal home-page-video-modal video-modal">
     <div class="inner-wrapper">
-      <iframe title="YouTube Video" width="640" height="360"
-        src="//www.youtube.com/embed/${homepage_promo_video_youtube_id}?showinfo=0" frameborder="0"
-        allowfullscreen></iframe>
+        <iframe title="YouTube Video" width="640" height="360" src="//www.youtube.com/embed/${homepage_promo_video_youtube_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
-  % endif
+% endif
 
-  <%block name="js_extra">
-    <script type="text/javascript">
-      $(window).load(function () {
-        if (getParameterByName('next')) {
-          $('#login').trigger("click");
-        }
-      })
-    </script>
-  </%block>
+<%block name="js_extra">
+   <script type="text/javascript">
+    $(window).load(function () {
+      if (getParameterByName('next')) {
+        $('#login').trigger("click");
+      }
+    })
+  </script>
+</%block>
 
-  % if show_signup_immediately is not UNDEFINED:
+% if show_signup_immediately is not UNDEFINED:
   ## NOTE: This won't work in production, because anonymous views are cached, so it will
   ## show either with or without this extra js for 3 minutes at a time.
-  <script type="text/javascript">
-    $(window).load(function () { $('#signup_action').trigger("click"); });
-  </script>
-  % endif
+<script type="text/javascript">
+  $(window).load(function () { $('#signup_action').trigger("click"); });
+</script>
+% endif
