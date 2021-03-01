@@ -20,12 +20,7 @@ from openedx.core.djangolib.markup import HTML, Text
             <%include file="index_overlay.html" />
               % endif
             </div>
-            
-
-          </div>
-
-        </div>
-<!-- % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
+            % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
               <div class="course-search">
                 <form method="get" action="/courses">
                   <label><span class="sr">${_("Search for a course")}</span>
@@ -36,7 +31,12 @@ from openedx.core.djangolib.markup import HTML, Text
                   </button>
                 </form>
               </div>
-            % endif -->
+            % endif
+
+          </div>
+
+        </div>
+
       </header>
       <div class="our-stud">
         <p>People who have attended our programs power some of the best companies in Ethiopia.</p>
