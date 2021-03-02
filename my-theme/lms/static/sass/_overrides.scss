@@ -273,3 +273,99 @@
 }
 
 
+/*Styles for teach with us page*/
+
+#t-jumbo {
+  background-image: url('../images/teachp.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+#t-jumbo .t-content {
+  padding: 10%;
+  color: white;
+}
+
+#t-jumbo .t-content h1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+#t-jumbo .t-content h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*Why teach on Gobeze*/
+section.t-why {
+  margin: 40px 10%;
+  text-align: center;
+  max-width: 80%;
+}
+.t-why h1 {
+  /* margin-bottom: 20px; */
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+.t-why p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 20px;
+}
+.t-why .line1 {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 10%;
+  border-top: 2px solid #040707;
+}
+
+
+/*How teaching works*/
+#how-teaching {
+  margin: 60px 10%;
+  padding: 20px;
+}
+#how-teaching .t-title h1 {
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+#how-teaching .t-cards {
+  display: flex;
+}
+
+#how-teaching .t-cards .t-card {
+  /* border: 1px solid black; */
+  padding-right: 2%;
+}
+#how-teaching .t-cards .t-card:last-child {
+  padding-right: 0;
+}
+#how-teaching .t-cards .t-card h4 {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+#how-teaching .t-cards .t-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+#how-teaching .t-cards .t-card img.item-imgs {
+  width: 100%;
+  max-height: 120px;
+  padding: 25px 0;
+}
+
+/*Ready to start Teaching*/
+#ready {
+  margin: 60px 10%;
+  padding: 20px;
+  text-align: center;
+}
+#ready .t-title h1 {
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+#ready p {
+  margin-top: 20px;
+}
