@@ -287,12 +287,17 @@
 }
 
 #t-jumbo .t-content h1 {
+  font-weight: bold;
+  color: white;
   font-size: 2.5rem;
   line-height: 1.5;
   text-align: center;
 }
 #t-jumbo .t-content h2 {
+  color: white;
   text-align: center;
+  font-family: Arial;
+  font-size: 1.5rem;
   margin-top: 10px;
 }
 
@@ -304,6 +309,7 @@ section.t-why {
 }
 .t-why h1 {
   /* margin-bottom: 20px; */
+  font-weight: bold;
   font-size: 1.7rem;
   line-height: 1.5;
 }
@@ -327,6 +333,8 @@ section.t-why {
 }
 #how-teaching .t-title h1 {
   font-size: 1.7rem;
+  font-weight: bold;
+  text-align: left;
   line-height: 1.5;
 }
 
