@@ -14,7 +14,8 @@
 	a{
 		.logo{
 			float: left;
-    		height: 60px;
+    	height: 60px;
+      margin-top: -10px;
 		}
 	}
 }
@@ -98,7 +99,7 @@
 }
 .jumbo-content .jumbo-btn:hover {
   background-color: #040707;
-  /* color: #040707; */
+  color: #040707;
 }
 .jumbo-content .jumbo-btn a {
   text-align: center;
