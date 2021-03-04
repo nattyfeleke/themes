@@ -256,6 +256,9 @@
 .courses-container{
 	padding: 0 20px 10px;
 }
+.courses-container .courses .course {
+  border-bottom: 3px solid #040707;
+}
 
 .courses-container .courses .course .course-info {
     height: 180px;
