@@ -381,3 +381,135 @@ section.t-why {
 #ready p {
   margin-top: 20px;
 }
+
+/*Styles for Government Page*/
+
+.all-wrapper {
+  margin-top: 30px;
+}
+
+.g-cont {
+  padding: 0 10%;
+  display: flex;
+}
+.g-cont .g-img {
+  background-image: url('../images/b.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  height: 300px;
+  border-top-right-radius: 400px;
+  border-bottom-right-radius: 400px;
+  /* border-radius: 250px; */
+}
+.g-cont .g-text {
+  text-align: center;
+  margin-top: 30px;
+  padding-left: 40px;
+}
+.g-cont .g-text .g-headline {
+  text-align: left;
+}
+.g-cont .g-text p {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+.g-cont .g-text .bbtn {
+  margin-top: 30px;
+  text-align: left;
+  background-color: #ed1b2d;
+  border-radius: 3px;
+  padding: 20px;
+  width: 30%;
+  cursor: pointer;
+}
+.g-cont .g-text .bbtn:hover {
+  background-color: #c71827;
+}
+.g-cont .g-text .bbtn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  /* letter-spacing: 1.5px; */
+}
+
+/* Section Two: Power your learning */
+
+#pow{
+background-color: #ed1b2d;
+
+}
+#pow .pow-cont{
+  margin: 30px 18%;
+  padding: 5%;
+  text-align: center;
+}
+#pow .pow-cont .p-heading{
+color: white;
+}
+#pow .pow-cont .p-heading h1{
+font-size: 2.5rem;
+}
+#pow .pow-cont .req-btn{
+  padding: 12px;
+background-color: white;
+width: 25%;
+margin: 0 auto;
+margin-top: 20px;
+border-radius: 3px;
+cursor: pointer;
+transition: background-color .5s;
+}
+#pow .pow-cont .req-btn:hover{
+background-color: #d1d1d1;
+}
+#pow .req-btn a {
+text-decoration: none;
+color: #ed1b2d;
+letter-spacing: .035rem;
+}
+
+/* Section Three: Prepare */
+#prepare{
+margin: 20px 10%;
+text-align: center;
+}
+#prepare .prep-head{
+text-align: center;
+}
+#prepare .prep-head h1{
+font-size: 2rem;
+line-height: 1.5;
+}
+#prepare .g-cards{
+  text-align: center;
+margin-top: 20px;
+display: flex;
+}
+#prepare .g-cards .g-card{
+width: 32%;
+padding-right: 2%;
+}
+#prepare .g-cards .g-card:last-child{
+padding-right: 0;
+}
+#prepare .g-cards .g-card .g-card-img{
+
+}
+#prepare .g-cards .g-card .g-card-img img.card-imgs{
+  width: auto;
+  max-height: 150px;
+  padding: 25px 0;
+}
+#prepare .g-cards .g-card h4{
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+#prepare .g-cards .g-card p{
+  font-size: 1rem;
+  line-height: 1.6;
+}
