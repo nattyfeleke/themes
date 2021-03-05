@@ -648,6 +648,22 @@ padding-right: 2%;
 flex-basis: 100%;
 }
 }
+/*For teach with us page Responsiveness*/
+@media screen and (max-width: 824px){
+  #how-teaching .t-cards {
+  display: block;
+}
+
+#how-teaching .t-cards .t-card {
+  /* border: 1px solid black; */
+  width: 100%;
+  }
+  #how-teaching .t-cards .t-card:nth-child(2) {
+  padding-right: 0;
+  margin: 0;
+}
+
+}
     </style>
 
     <% ga_acct = static.get_value("GOOGLE_ANALYTICS_ACCOUNT", settings.GOOGLE_ANALYTICS_ACCOUNT) %>

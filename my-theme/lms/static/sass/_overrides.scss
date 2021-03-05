@@ -392,15 +392,8 @@ section.t-why {
   padding: 0 10%;
   display: flex;
 }
-.g-cont .g-img {
-  background-image: url('../images/standingman.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 80%;
-  height: 300px;
-  border-top-right-radius: 400px;
-  border-bottom-right-radius: 400px;
-  /* border-radius: 250px; */
+.g-cont .g-img img {
+height: 330px;
 }
 .g-cont .g-text {
   text-align: center;
@@ -429,7 +422,7 @@ section.t-why {
   background-color: #ed1b2d;
   border-radius: 3px;
   padding: 20px;
-  width: 30%;
+  width: fit-content;
   cursor: pointer;
 }
 .g-cont .g-text .bbtn:hover {
@@ -465,7 +458,7 @@ margin-bottom: 0;
 #pow .pow-cont .req-btn{
   padding: 12px;
 background-color: white;
-width: 25%;
+width: fit-content;
 margin: 0 auto;
 margin-top: 20px;
 border-radius: 3px;
