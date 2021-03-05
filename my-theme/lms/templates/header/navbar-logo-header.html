@@ -34,14 +34,12 @@ from branding import api as branding_api
     </div> -->
   % endif
 </h1>
-<div>
       <div class="mobile-nav-item hidden-mobile nav-item">
               <a class="go-btn btn" href="/government">Gobeze for Government</a>
     </div>
     <div class="mobile-nav-item hidden-mobile nav-item">
               <a class="go-btn btn" href="/government">Gobeze for Government</a>
     </div>
-  </div>
 % if enable_enterprise_sidebar:
   <div class="enterprise-tagline">
     <% tagline = configuration_helpers.get_value('ENTERPRISE_TAGLINE', settings.ENTERPRISE_TAGLINE) %>
