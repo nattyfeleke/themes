@@ -498,9 +498,9 @@ line-height: 1.5;
   text-align: center;
 margin-top: 20px;
 display: flex;
+flex-wrap: wrap;
 }
 #prepare .g-cards .g-card{
-flex-grow: 1;
 width: 32%;
 padding-right: 2%;
 }

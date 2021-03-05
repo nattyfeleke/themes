@@ -630,6 +630,21 @@ from pipeline_mako import render_require_js_path_overrides
   margin-top: 25px;
 }
 }
+/*For gov't page*/
+@media screen and (max-width: 743px){
+  #prepare .g-cards .g-card{
+width: 32%;
+padding-right: 2%;
+flex-basis: 50%;
+}
+}
+@media screen and (max-width: 590px){
+  #prepare .g-cards .g-card{
+width: 32%;
+padding-right: 2%;
+flex-basis: 100%;
+}
+}
     </style>
 
     <% ga_acct = static.get_value("GOOGLE_ANALYTICS_ACCOUNT", settings.GOOGLE_ANALYTICS_ACCOUNT) %>
