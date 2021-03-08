@@ -643,7 +643,7 @@ from pipeline_mako import render_require_js_path_overrides
 }
 }
 /*For gov't page*/
-@media screen and (max-width: 1008px){
+@media screen and (max-width: 1019px){
   .g-cont .g-text .g-headline h1 {
     font-size: 2rem;
   }
@@ -654,6 +654,7 @@ from pipeline_mako import render_require_js_path_overrides
     font-size: 1.1rem;
   }
 }
+
 @media screen and (max-width: 968px){
   .g-cont .g-text .g-headline h1 {
     font-size: 1.8rem;
@@ -3637,6 +3638,7 @@ flex-basis: 100%;
 
 
     </script>
+
 </head>
 
 <body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}">
@@ -3675,6 +3677,25 @@ flex-basis: 100%;
   <%block name="js_extra"/>
 
   <%include file="widgets/segment-io-footer.html" />
+   <script type="text/javascript">
+        const secR = document.querySelector('.sec-r');
+        const secL = document.querySelector('.sec-l');
+        const effectR = document.querySelector('#effect-r');
+        const effectL = document.querySelector('#effect-l');
+        
+        secR.addEventListener('mouseover', () =>{
+            effectR.classList.add('effect-r');
+        } );
+        secR.addEventListener('mouseout', () =>{
+            effectR.classList.remove('effect-r');
+        } );
+        secL.addEventListener('mouseover', () =>{
+            effectL.classList.add('effect-l');
+        } );
+        secL.addEventListener('mouseout', () =>{
+            effectL.classList.remove('effect-l');
+        } );
+    </script>
   <script type="text/javascript" src="${static.url('js/vendor/noreferrer.js')}" charset="utf-8"></script>
   <script type="text/javascript" src="${static.url('js/utils/navigation.js')}" charset="utf-8"></script>
   <script type="text/javascript" src="${static.url('js/header/header.js')}"></script>
