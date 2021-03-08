@@ -173,13 +173,24 @@
   display: flex;
   color: white;
 }
+#learn-teach .holder .half{
+  width: 100%;
+}
 #learn-teach .holder .sec-r {
   background-image:url('../images/t-l.png');
-  width: 50%;
-  padding: 6% 6% 6% 8%;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
+  transform: scale(1);
+}
+#learn-teach #effect-r, #learn-teach #effect-l{
+    transform: scale(1);   
+    transition: transform .4s;
+}
+#learn-teach #effect-r.effect-r, #learn-teach #effect-l.effect-l{
+    transform: scale(1.05);   
 }
 #learn-teach .holder .sec-r h2 {
   font-family: Arial;
@@ -188,12 +199,22 @@
   color: white;
 }
 #learn-teach .holder .sec-l {
-  background-image:url('../images/t-rr.png');
-  width: 50%;
-  padding: 6% 8% 6% 6%;
+  background-image:url('../images/t-r.png');
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
+}
+#learn-teach .holder .sec-l .transbox-l{
+  padding: 6% 8% 6% 6%;
+  background: rgba(237, 27, 45, 0.6);
+  height: 100%;  
+}
+#learn-teach .holder .sec-r .transbox-r{
+  padding: 6% 6% 6% 8%;
+  background: rgba(237, 27, 45, 0.6);
+  height: 100%;
 }
 #learn-teach .holder .sec-l h2 {
   font-family: Arial;
@@ -225,33 +246,6 @@
   background-color: #ed1b2d;
 }
 
-/*Teach with Us Section */
-.teach-with-us {
-	background: url('../images/bg-teach.jpg') no-repeat;
-	background-size: cover;
-	background-position: 50%;
-	text-align: center;
-	clear: both;
-	margin-left: -20px;
-	margin-right: -20px; 
-	margin-bottom: -10px;
-	.transbox {
-		background: rgba(237, 27, 45, 0.6);
-		padding-bottom: 12px;
-	}
-	h1.teach-big {
-		color: white;
-		font-size: 6rem;
-		letter-spacing: 3px;
-		margin: 0;
-		padding: 0;
-	}
-	p.teach-small {
-		color: white;
-		margin: 0 0 10px 0;
-		padding: 0;
-	}
-}
 
 .courses-container{
 	padding: 0 20px 10px;
@@ -277,7 +271,7 @@
 }
 
 
-/*Styles for teach with us page*/
+/*Styles for teach widthth us page*/
 
 #t-jumbo {
   background-image: url('../images/teachp.jpg');
