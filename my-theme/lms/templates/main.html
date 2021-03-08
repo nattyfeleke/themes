@@ -421,6 +421,7 @@ from pipeline_mako import render_require_js_path_overrides
     padding: none;
 }
 }
+/*Main page responsiveness*/
         @media screen and (max-width: 1125px){
   .text-area {
     color: white;
@@ -432,20 +433,16 @@ from pipeline_mako import render_require_js_path_overrides
     color: #040707;
     margin: 10px 6%;
   } 
-  #learn-teach .holder .sec-r {
-    width: 50%;
-    padding: 6%;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-  }
-  #learn-teach .holder .sec-l {
-    width: 50%;
-    padding: 6%;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat; 
-  }
+  #learn-teach .holder .sec-r .transbox-r{
+  padding: 6%;
+  background: rgba(237, 27, 45, 0.6);
+  height: 100%;
+}
+ #learn-teach .holder .sec-l .transbox-l{
+  padding: 6%;
+  background: rgba(237, 27, 45, 0.6);
+  height: 100%;  
+}
   #pow .pow-cont .p-heading h1 {
       font: bold 2.3rem Arial;
     }
@@ -513,20 +510,6 @@ from pipeline_mako import render_require_js_path_overrides
     display: block;
     color: white;
 }
-#learn-teach .holder .sec-r {
-  width: 100%;
-  padding: 6%;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-}
-#learn-teach .holder .sec-l {
-  width: 100%;
-  padding: 6%;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-}
 }
 @media screen and (max-width: 675px ) and (min-width: 640px ){
   .text-area{
@@ -541,22 +524,7 @@ from pipeline_mako import render_require_js_path_overrides
   #learn-teach .holder {
     display: block;
   }
-  #learn-teach .holder .sec-r {
-    height: 200px;
-    width: 100%;
-  padding: 6%;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  }
-  #learn-teach .holder .sec-l {
-    height: 200px;
-    width: 100%;
-  padding: 6%;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  }
+  
 }
 @media screen and (max-width: 634px ) and (min-width: 411px ){
   .hide-sm{
