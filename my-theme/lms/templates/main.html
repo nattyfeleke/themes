@@ -171,6 +171,7 @@ from pipeline_mako import render_require_js_path_overrides
             padding-top: 10px;
             text-align: center;
             line-height: 30px;
+            margin: 0 10px;
         }
 
         .our-stud p.line-for-stud {
@@ -435,13 +436,9 @@ from pipeline_mako import render_require_js_path_overrides
   } 
   #learn-teach .holder .sec-r .transbox-r{
   padding: 6%;
-  background: rgba(237, 27, 45, 0.6);
-  height: 100%;
 }
  #learn-teach .holder .sec-l .transbox-l{
   padding: 6%;
-  background: rgba(237, 27, 45, 0.6);
-  height: 100%;  
 }
   #pow .pow-cont .p-heading h1 {
       font: bold 2.3rem Arial;
@@ -509,6 +506,15 @@ from pipeline_mako import render_require_js_path_overrides
   #learn-teach .holder {
     display: block;
     color: white;
+}
+@media screen and (max-width: 780px){
+  .our-stud p {
+    font-size: 1.4rem;
+}
+}
+@media screen and (max-width: 554px){
+  .our-stud p {
+    font-size: 1.3rem;
 }
 }
 @media screen and (max-width: 675px ) and (min-width: 640px ){
