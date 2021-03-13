@@ -56,13 +56,16 @@
 /*Styles for the icons*/
 .fa-c{
   color: #ed1b2d;
-  border-bottem: 2px solid;
+  border-bottom: 2px solid;
 }
 .fa{
   padding-bottom: 10px;
 }
 
 /*Style for the Jumbo*/
+.jumbo-holder {
+  border-bottom: 7px solid #040707;
+}
 .jumbo {
   background-image: url('../images/gobezeJumbo.png');
   background-position: 50%;
@@ -99,8 +102,9 @@
   padding: 0.4rem;
   background-color: #ed1b2d;
   color: white;
+  border: 1px solid; white;
   width: fit-content;
-  border-radius: 6px;
+  border-radius: 50px;
   transition: background-color .4s;
   cursor: pointer;
   /* transition: color 1s; */
@@ -368,6 +372,16 @@ section.t-why {
 #how-teaching .t-cards .t-card {
   /* border: 1px solid black; */
   padding-right: 2%;
+  position: relative;
+}
+#how-teaching .t-cards .t-card .num {
+  position: absolute;
+  top: -35px;
+  left: 0%;
+  padding: 0;
+  margin: 0;
+  opacity: 0.1;
+  font-size: 13rem;
 }
 #how-teaching .t-cards .t-card:last-child {
   padding-right: 0;
