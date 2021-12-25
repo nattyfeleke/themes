@@ -510,7 +510,6 @@ from pipeline_mako import render_require_js_path_overrides
     background-color: #ed1b2d;
     color: white;
     width: fit-content;
-    border-radius: 6px;
     transition: background-color .4s;
     cursor: pointer;
     /* transition: color 1s; */
@@ -565,8 +564,8 @@ from pipeline_mako import render_require_js_path_overrides
   }
   .jumbo-content .jumbo-btn {
     position: absolute;
-    bottom: -60px;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #learn-teach .holder {
     display: block;
