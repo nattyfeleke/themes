@@ -3758,25 +3758,7 @@ flex-basis: 100%;
 
 
     </script>
-    <script type="text/javascript" charset="utf-8">
-        /* Javascript for hover effect on courses */
-        var globalHeader = document.getElementById("courses-menu-id");
-        console.log(globalHeader);
-        globalHeader.addEventListener("mouseenter", function( event ) {
-   /* highlight the mouseenter target */
-
-            console.log("triggered");
   
-}, false);
-
-globalHeader.addEventListener("mouseover", function( event ) {
-   /* highlight the mouseenter target */
-
-            console.log("triggered again");
-  
-}, false);
-
-        </script>
 </head>
 
 <body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}">
@@ -3833,7 +3815,26 @@ globalHeader.addEventListener("mouseover", function( event ) {
         secL.addEventListener('mouseout', () =>{
             effectL.classList.remove('effect-l');
         } );
+
+        /* Javascript for hover effect on courses */
+        var globalHeader = document.getElementById("courses-menu-id");
+        console.log(globalHeader);
+        globalHeader.addEventListener("mouseenter", function( event ) {
+   /* highlight the mouseenter target */
+
+            console.log("triggered");
+  
+}, false);
+
+globalHeader.addEventListener("mouseover", function( event ) {
+   /* highlight the mouseenter target */
+
+            console.log("triggered again");
+  
+}, false);
+
     </script>
+  
   <script type="text/javascript" src="${static.url('js/vendor/noreferrer.js')}" charset="utf-8"></script>
   <script type="text/javascript" src="${static.url('js/utils/navigation.js')}" charset="utf-8"></script>
   <script type="text/javascript" src="${static.url('js/header/header.js')}"></script>
