@@ -41,23 +41,31 @@ from six import text_type
     %endif
   % endif
   </div>
+  <div class="primary">
+    <div style="display: inline;">
+      <div class="nav-courses hidden-mobile">
+              <a class="courses-btn" href="/courses" >Courses</a>
+    </div>
+   
+  </div>
+    </div>
  <div class="secondary">
     <div style="display: inline;">
       <div class="mobile-nav-item hidden-mobile nav-item">
-              <a class="go-btn " href="/#!" style="color: #ed1b2d;">Gobeze for Business</a>
+              <a class="go-btn " href="/#!" >Gobeze for Business</a>
     </div>
     <div class="mobile-nav-item hidden-mobile nav-item">
-              <a class="go-btn" href="/government" style="color: #ed1b2d;">Gobeze for Government</a>
+              <a class="go-btn" href="/government" >Gobeze for Government</a>
     </div>
   </div>
   <span class="hor-divider">|</span>
   
       % if allows_login:
         % if allow_public_account_creation:
-            <div class="mobile-nav-item hidden-mobile nav-item">
-              <a class="go-btn" href="/downloads" style="color: #ed1b2d;">Download</a>
-            </div>
-            <div class="mobile-nav-item hidden-mobile nav-item">
+            <!-- <div class="mobile-nav-item hidden-mobile nav-item">
+              <a class="go-btn" href="/downloads" >Download</a>
+            </div> -->
+            <div class="mobile-nav-item hidden-mobile nav-item register">
               <a class="register-btn btn" href="/register${login_query()}">${_("Register")}</a>
             </div>
         % endif

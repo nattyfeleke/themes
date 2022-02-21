@@ -318,7 +318,7 @@ from pipeline_mako import render_require_js_path_overrides
           /*Horizontal divider*/
           span.hor-divider{
             font-size: 1.5rem;
-            color: #ed1b2d;
+            color: #dbdbdb;
           }
           @media screen and (max-width: 991px){
             span.hor-divider{
@@ -336,28 +336,52 @@ from pipeline_mako import render_require_js_path_overrides
             clear: both;
         }
 
-        footer .colophon {}
+                    footer {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            }
 
-        footer .colophon nav {}
+            footer .logo {
+            min-width: 120px;
+            max-width: 200px;
+            }
 
-        footer .colophon nav ol {
-            width: auto;
-            float: right;
-            margin-top: 8px;
-        }
+            footer .logo img {
+            width: 100%;
+            }
 
-        footer .colophon nav ol li {
-            display: block;
-            padding: 15px, 30px;
-            margin: 20px;
-        }
+            footer .links {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin: 2rem 0;
+            }
 
-        footer .colophon nav ol li a {
-            color: #ff0012;
-            font: inherit;
+            ul.footer-lists {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            list-style: none;
+            }
+
+            ul.footer-lists .title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            }
+            ul.footer-lists .footer-link a {
             text-decoration: none;
-            transition: all 0.1s linear 0s;
-        }
+            color: #050808;
+            font: inherit;
+            }
+
+            footer .copyright {
+            border-top: 1px solid grey;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+
 
         .social-menu ul {
             padding: 0;
@@ -393,9 +417,7 @@ from pipeline_mako import render_require_js_path_overrides
             box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
         }
 
-        .social-menu ul li a:hover {
-            transform: translate(0, 10px);
-        }
+        
 
         .social-menu ul li:nth-child(1) {
             margin-left: 0px;
@@ -417,9 +439,42 @@ from pipeline_mako import render_require_js_path_overrides
         .social-menu ul li:nth-child(4) a:hover {
             background-color: #0077B5;
         }
+
+        
         @media (min-width: 992px){
+            .global-header .nav-links .primary {
+                float: left;
+                margin: 15px 40px 0 0;
+            }
+
+            .global-header .nav-links .primary .nav-courses {
+                font-size: 1rem;
+    display: inline-block;
+    padding: 8px 0 0;
+    margin: 0 8px;
+            }
+            .global-header .nav-links .primary .nav-courses a{
+                color: #454545;
+    font-weight: 600;
+    font-size: 0.875rem;
+            
+            }
+
           .global-header .nav-links .secondary a.sign-in-btn {
             border: 1px solid #ff0012;
+            padding: 8px 16px;
+            font-weight: 600;
+          }
+          .global-header .nav-links .secondary a.register-btn {
+            border: none;
+            padding: 8px 16px;
+            font-weight: 600;
+          }
+          .global-header .nav-links .secondary .register{
+margin: 0;
+          }
+          .global-header .nav-links .secondary .nav-item a {
+              color: #454545;
           }
           .global-header .nav-links .secondary .btn {
             border-radius: 50px;
