@@ -3804,8 +3804,11 @@ flex-basis: 100%;
         const effectL = document.querySelector('#effect-l');
         const globalHeader =  document.querySelector('#courses-menu-id');
 
+        globalHeader.addEventListener('mouseenter', () =>{
+           console.log('will add overflow css')
+        } );
         globalHeader.addEventListener('mouseover', () =>{
-           console.log('triggered hover')
+           console.log('will make overflow hidden')
         } );
         secR.addEventListener('mouseover', () =>{
             effectR.classList.add('effect-r');
