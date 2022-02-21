@@ -3814,9 +3814,12 @@ flex-basis: 100%;
             globalHeader.classList.remove('overflow-visible');
         } );
         secR.addEventListener('mouseover', () =>{
+            console.log('mouse in');
             effectR.classList.add('effect-r');
         } );
         secR.addEventListener('mouseout', () =>{
+            console.log('mouse out');
+
             effectR.classList.remove('effect-r');
         } );
         secL.addEventListener('mouseover', () =>{
