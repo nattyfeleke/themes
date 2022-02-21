@@ -3807,12 +3807,20 @@ flex-basis: 100%;
         const globalHeader =  document.querySelector('.global-header');
         const coursesLink =  document.querySelector('#courses-menu-id');
 
-        coursesLink.addEventListener('mouseover', () =>{
-            globalHeader.classList.add('overflow-visible');
-        } );
-        coursesLink.addEventListener('mouseout', () =>{
+        coursesLink.addEventListener('click', () =>{
+            var clicked = false;
+            clicked = !clicked;
+            console.log('clicked' + clicked);
+           if(clicked){
+            globalHeader.classList.add('overflow-visible')
+           }
+           else {
             globalHeader.classList.remove('overflow-visible');
+           }
         } );
+        /* coursesLink.addEventListener('click', () =>{
+            globalHeader.classList.remove('overflow-visible');
+        } ); */
         secR.addEventListener('mouseover', () =>{
             console.log('mouse in');
             effectR.classList.add('effect-r');
