@@ -167,7 +167,9 @@ from pipeline_mako import render_require_js_path_overrides
         * {
             box-sizing: border-box;
         }
-
+        .overflow-visible{
+            overflow: visible;
+        }
         .our-stud {
             margin-top: 20px;
         }
@@ -3802,13 +3804,14 @@ flex-basis: 100%;
         const secL = document.querySelector('.sec-l');
         const effectR = document.querySelector('#effect-r');
         const effectL = document.querySelector('#effect-l');
-        const globalHeader =  document.querySelector('#courses-menu-id');
+        const globalHeader =  document.querySelector('.global-header');
+        const coursesLink =  document.querySelector('#courses-menu-id');
 
-        globalHeader.addEventListener('mouseover', () =>{
-           console.log('will add overflow css')
+        coursesLink.addEventListener('mouseover', () =>{
+            globalHeader.classList.add('overflow-visible');
         } );
-        globalHeader.addEventListener('mouseout', () =>{
-           console.log('will make overflow hidden')
+        coursesLink.addEventListener('mouseout', () =>{
+            globalHeader.classList.remove('overflow-visible');
         } );
         secR.addEventListener('mouseover', () =>{
             effectR.classList.add('effect-r');
