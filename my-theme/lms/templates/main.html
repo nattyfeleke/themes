@@ -3758,7 +3758,24 @@ flex-basis: 100%;
 
 
     </script>
+    <script type="text/javascript" charset="utf-8">
+        /* Javascript for hover effect on courses */
+        var globalHeader = document.getElementById("global-header");
+        globalHeader.addEventListener("mouseenter", function( event ) {
+   /* highlight the mouseenter target */
 
+            console.log("triggered")
+  
+}, false);
+
+globalHeader.addEventListener("mouseover", function( event ) {
+   /* highlight the mouseenter target */
+
+            console.log("triggered again")
+  
+}, false);
+
+        </script>
 </head>
 
 <body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}">
