@@ -3760,18 +3760,19 @@ flex-basis: 100%;
     </script>
     <script type="text/javascript" charset="utf-8">
         /* Javascript for hover effect on courses */
-        var globalHeader = document.getElementsByClassName("global-header");
+        var globalHeader = document.getElementsByClassName("global-header")[0];
+        console.log(globalHeader);
         globalHeader.addEventListener("mouseenter", function( event ) {
    /* highlight the mouseenter target */
 
-            console.log("triggered")
+            console.log("triggered");
   
 }, false);
 
 globalHeader.addEventListener("mouseover", function( event ) {
    /* highlight the mouseenter target */
 
-            console.log("triggered again")
+            console.log("triggered again");
   
 }, false);
 
