@@ -455,13 +455,31 @@ from pipeline_mako import render_require_js_path_overrides
     display: inline-block;
     padding: 8px 0 0;
     margin: 0 8px;
+    position: relative;
+            }
+            .global-header .nav-links .primary .nav-courses:hover {
+background-color: #040707;
             }
             .global-header .nav-links .primary .nav-courses a{
                 color: #454545;
     font-weight: 600;
-    font-size: 0.875rem;
-            
+    font-size: 0.875rem;            
             }
+            .global-header .nav-links .primary .nav-courses:hover > a {
+                color: white;
+                padding: 0 8px;
+            }
+
+            .global-header .nav-links .primary .nav-courses .course-menu{
+                position: absolute;
+                top: 60px;
+                display: none;
+            }
+
+            .global-header .nav-links .primary .nav-courses:hover > .course-menu {
+                display: flex;
+            }
+            
             .global-header .nav-links .secondary .nav-item a {
               color: #454545;
           }
