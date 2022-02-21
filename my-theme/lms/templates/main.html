@@ -3805,9 +3805,9 @@ flex-basis: 100%;
         const effectR = document.querySelector('#effect-r');
         const effectL = document.querySelector('#effect-l');
         const globalHeader =  document.querySelector('.global-header');
-        const coursesLink =  document.querySelector('#courses-menu-id');
+        const coursesLink =  document.querySelector('.nav-courses');
 
-        coursesLink.addEventListener('click', () =>{
+        /* coursesLink.addEventListener('click', () =>{
             var clicked = false;
             clicked = !clicked;
             console.log('clicked' + clicked);
@@ -3817,10 +3817,13 @@ flex-basis: 100%;
            else {
             globalHeader.classList.remove('overflow-visible');
            }
-        } );
-        /* coursesLink.addEventListener('click', () =>{
-            globalHeader.classList.remove('overflow-visible');
         } ); */
+        coursesLink.addEventListener('mouseover', () =>{
+            globalHeader.classList.add('overflow-visible');
+        } );
+        coursesLink.addEventListener('mouseout', () =>{
+            globalHeader.classList.remove('overflow-visible');
+        } );
         secR.addEventListener('mouseover', () =>{
             console.log('mouse in');
             effectR.classList.add('effect-r');
