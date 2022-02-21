@@ -459,11 +459,17 @@ from pipeline_mako import render_require_js_path_overrides
     font-size: 0.875rem;
             
             }
-
+            .global-header .nav-links .secondary .nav-item a {
+              color: #454545;
+          }
+          .global-header .nav-links .secondary .btn {
+            border-radius: 50px;
+          }
           .global-header .nav-links .secondary a.sign-in-btn {
             border: 1px solid #ff0012;
             padding: 8px 16px;
             font-weight: 600;
+            color: white;
           }
           .global-header .nav-links .secondary a.register-btn {
             border: none;
@@ -473,12 +479,7 @@ from pipeline_mako import render_require_js_path_overrides
           .global-header .nav-links .secondary .register{
 margin: 0;
           }
-          .global-header .nav-links .secondary .nav-item a {
-              color: #454545;
-          }
-          .global-header .nav-links .secondary .btn {
-            border-radius: 50px;
-          }
+          
         }
         @media (max-width: 805px){
             .d-jumbo .d-jumbo-content .mockup img {
