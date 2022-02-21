@@ -3802,7 +3802,11 @@ flex-basis: 100%;
         const secL = document.querySelector('.sec-l');
         const effectR = document.querySelector('#effect-r');
         const effectL = document.querySelector('#effect-l');
-        
+        const globalHeader =  document.querySelector('#courses-menu-id');
+
+        globalHeader.addEventListener('mouseover', () =>{
+           console.log('triggered hover')
+        } );
         secR.addEventListener('mouseover', () =>{
             effectR.classList.add('effect-r');
         } );
@@ -3815,23 +3819,6 @@ flex-basis: 100%;
         secL.addEventListener('mouseout', () =>{
             effectL.classList.remove('effect-l');
         } );
-
-        /* Javascript for hover effect on courses */
-        var globalHeader = document.getElementById("courses-menu-id");
-        console.log(globalHeader);
-        globalHeader.addEventListener("mouseenter", function( event ) {
-   /* highlight the mouseenter target */
-
-            console.log("triggered");
-  
-}, false);
-
-globalHeader.addEventListener("mouseover", function( event ) {
-   /* highlight the mouseenter target */
-
-            console.log("triggered again");
-  
-}, false);
 
     </script>
   
