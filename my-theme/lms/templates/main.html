@@ -332,14 +332,14 @@ from pipeline_mako import render_require_js_path_overrides
             box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.1);
             border-top: 1px solid #c5c6c7;
             padding: 10px 25px 10px 25px;
-            background: #e6e6e6;
+            background: #fff;
             clear: both;
         }
 
         footer {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1rem;
             }
 
             footer .logo {
@@ -347,31 +347,34 @@ from pipeline_mako import render_require_js_path_overrides
             max-width: 200px;
             }
 
-            footer .logo img {
-            width: 100%;
-            }
 
             footer .links {
             display: flex;
             align-items: flex-start;
-            gap: 2rem;
+            gap: 4rem;
             margin: 2rem 0;
             }
+
+           
 
             ul.footer-lists {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.25rem;
             list-style: none;
+            padding: 0;
+            font-size: 1.05rem;
             }
-
+            ul.footer-lists .footer-link {
+           color: #040707;
+            }
             ul.footer-lists .title {
             font-weight: 600;
             margin-bottom: 1rem;
             }
             ul.footer-lists .footer-link a {
             text-decoration: none;
-            color: #050808;
+            color: #040707db;
             font: inherit;
             }
 
