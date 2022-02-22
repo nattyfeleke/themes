@@ -477,10 +477,12 @@ background-color: #040707;
                 top: 40px;
                 display: none;
                 background-color: white;
-                padding: 2rem;
+                padding: 1rem 2rem;
                 z-index: 10;
                 max-width: 920px;
                 min-width: 800px;
+                border-top: 4px solid;
+
             }
 
             .global-header .nav-links .primary .nav-courses:hover > .course-menu {
@@ -495,6 +497,11 @@ background-color: #040707;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #aaa;
+}
+#courses-menu-id .course-menu-title h1{
+    margin: 0;
 }
 /*for links in the right side when course menu pops*/
 .secondary-link{
@@ -505,6 +512,7 @@ background-color: #040707;
 #courses-menu-id .course-menu-lists {
     display: flex;
     gap: 2rem;
+    margin-top: 12px;
 }
 #courses-menu-id .course-menu-lists ul {
     padding: 0;
@@ -523,6 +531,9 @@ background-color: #040707;
 
 #courses-menu-id .course-menu-lists ul li a{
     color: #040707db;
+    font-weight: 400;
+    display: inline-block;
+    max-width: 200px;
 }
 
             .global-header .nav-links .secondary .nav-item a {
