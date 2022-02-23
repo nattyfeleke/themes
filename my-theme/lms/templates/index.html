@@ -104,24 +104,28 @@ from openedx.core.djangolib.markup import HTML, Text
 </div>
 </section>
 <!--End Why Gobeze? -->
-<div class="our-stud">
-  <p>People who have attended our programs power some of the best companies in Ethiopia.</p>
-  <p class="line-for-stud"></p>
+<!-- Our students -->
+<div id="our-students">
+  <div class="our-stud">
+    <p>People who have attended our programs power some of the best companies in Ethiopia.</p>
+    <p class="line-for-stud"></p>
+  </div>
+  <div class="row">
+    <div class="container">
+      <section class="customer-logos slider">
+        <div class="slide"><img src="${static.url("images/cactus.png")}"></div>
+        <div class="slide"><img src="${static.url("images/bc.png")}"></div>
+        <div class="slide"><img src="${static.url("images/cocacola.png")}"></div>
+        <div class="slide"><img src="${static.url("images/diago.png")}"></div>
+        <div class="slide"><img src="${static.url("images/ethioairlines.png")}"></div>
+        <div class="slide"><img src="${static.url("images/giz.png")}"></div>
+        <div class="slide"><img src="${static.url("images/iceaddis.png")}"></div>
+        <div class="slide"><img src="${static.url("images/rfc.png")}"></div>
+      </section>
+    </div>  
+  </div>
 </div>
-<div class="row">
-  <div class="container">
-    <section class="customer-logos slider">
-      <div class="slide"><img src="${static.url("images/cactus.png")}"></div>
-      <div class="slide"><img src="${static.url("images/bc.png")}"></div>
-      <div class="slide"><img src="${static.url("images/cocacola.png")}"></div>
-      <div class="slide"><img src="${static.url("images/diago.png")}"></div>
-      <div class="slide"><img src="${static.url("images/ethioairlines.png")}"></div>
-      <div class="slide"><img src="${static.url("images/giz.png")}"></div>
-      <div class="slide"><img src="${static.url("images/iceaddis.png")}"></div>
-      <div class="slide"><img src="${static.url("images/rfc.png")}"></div>
-    </section>
-  </div>  
-</div>
+<!--End Our students -->
 
 <script type="text/javascript">
   $(document).ready(function () {
