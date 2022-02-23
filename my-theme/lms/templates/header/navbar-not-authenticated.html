@@ -98,11 +98,11 @@ from six import text_type
               <a class="go-btn" href="/downloads" >Download</a>
             </div> -->
             <div class="mobile-nav-item hidden-mobile nav-item register">
-              <a class="register-btn btn" href="/register${login_query()}">${_("Register")}</a>
+              <a class="register-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
             </div>
         % endif
           <div class="mobile-nav-item hidden-mobile nav-item">
-            <a class="sign-in-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
+            <a class="sign-in-btn btn" href="/register${login_query()}">${_("Register")}</a>
           </div>
       % endif
     </div>
