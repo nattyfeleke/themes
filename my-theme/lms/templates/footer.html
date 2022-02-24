@@ -22,7 +22,9 @@ from openedx.core.djangolib.markup import HTML, Text
         src="${static.url("images/logo.png")}" height="65px">
         </a>
     </div>
-    <div class="links">
+    <div class="footer-content">
+    
+      <div class="links">
       <div class="gobeze">
         <ul class="footer-lists">
           <li class="footer-link title">Gobeze</li>
@@ -78,37 +80,39 @@ from openedx.core.djangolib.markup import HTML, Text
         </ul>
       </div>
     </div>
+    <div class="social-menu">
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/traingobeze/" target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/traingobeze" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/traingobeze/" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/traingobeze/"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </div> 
+  </div>
     <div class="copyright">
         <div class="copyright-text">
         <p>&copy; 2021 - ${datetime.now(pytz.timezone(settings.TIME_ZONE)).year} Gobeze
           Consult.</p>
       </div>
-      <div class="social-menu">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/traingobeze/" target="_blank"
-              ><i class="fa fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/traingobeze" target="_blank"
-              ><i class="fa fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/traingobeze/" target="_blank"
-              ><i class="fa fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/company/traingobeze/"
-              target="_blank"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-      </div> 
+      
     </div>
      
     </div>

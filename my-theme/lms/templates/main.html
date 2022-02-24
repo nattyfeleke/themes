@@ -357,8 +357,12 @@ from pipeline_mako import render_require_js_path_overrides
             max-width: 200px;
             }
 
+            footer .footer-content {
+                display: flex;
+                justify-content: space-between;
+            }
 
-            footer .links {
+            footer .footer-content .links {
             display: flex;
             align-items: flex-start;
             gap: 4rem;
@@ -394,6 +398,7 @@ from pipeline_mako import render_require_js_path_overrides
             justify-content: space-between;
             padding: 16px 0;
             color: #535353;
+            font-size: 0.875rem;
             }
 
 
@@ -475,6 +480,9 @@ background-color: #040707;
                 color: #454545;
     font-weight: 600;
     font-size: 0.875rem;            
+            }
+            a.courses-btn:hover {
+                text-decoration: none;
             }
             .global-header .nav-links .primary .nav-courses:hover > a {
                 color: white;

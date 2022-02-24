@@ -53,6 +53,10 @@ html {
 		}
 	}
 }*/
+.home {
+  background-color: #f2f0ef;
+}
+
 .home > header {
   background: none;
 }
@@ -132,9 +136,9 @@ html {
 
 /*Style for Why Gobeze Section*/
 #why-gobeze {
-  margin: 50px 0;
+  padding: 50px 0;
   text-align: center;
-  /* font-size: 26px; */
+  background-color: white;
   color: #040707;
 }
 .con {
@@ -276,7 +280,7 @@ html {
 .courses-container {
   padding: 0 40px;
   background-color: #f2f0ef;
-  margin-top: -40px;
+ 
 }
 .courses-container .courses .featured {
   text-align: left;
