@@ -111,6 +111,9 @@ html {
   justify-content: center;
   padding: 10px 0;
   gap: 12px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .carousel__indicator {
@@ -118,7 +121,7 @@ html {
   border-radius: 50%;
   height: 15px;
   width: 15px;
-  background: rgba(0,0,0,0.3);
+  background: rgba(255,255,255,0.3);
   cursor: pointer;
   box-shadow: none;
   padding: 0;
@@ -129,7 +132,7 @@ html {
 }
 
 .carousel__indicator.current-slide {
-  background: rgba(0,0,0,0.75);
+  background: #040707;
 }
 
 .carousel__content__wrapper {
