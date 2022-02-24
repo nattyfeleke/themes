@@ -351,48 +351,41 @@ from pipeline_mako import render_require_js_path_overrides
             font-size: 1.5rem;
             color: #dbdbdb;
           }
+
           @media screen and (max-width: 991px){
             span.hor-divider{
             display: none;
           }
           }
-        /*Course providers */
-
-
-
+        
 /* Footer style */
-        .wrapper {
+.wrapper {
             box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.1);
             border-top: 1px solid #c5c6c7;
             padding: 10px 25px 10px 25px;
             background: #fff;
             clear: both;
         }
-
         footer {
             display: flex;
             flex-direction: column;
             gap: 1.25rem;
             }
-
             footer .logo {
             min-width: 120px;
             max-width: 200px;
             }
-
             footer .footer-content {
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
             }
-
             footer .footer-content .links {
             display: flex;
             align-items: flex-start;
             gap: 4rem;
             flex-wrap: wrap;
             }
-
             ul.footer-lists {
             display: flex;
             flex-direction: column;
@@ -413,7 +406,6 @@ from pipeline_mako import render_require_js_path_overrides
             color: #040707db;
             font: inherit;
             }
-
             footer .copyright {
             border-top: 1px solid grey;
             display: flex;
@@ -423,27 +415,20 @@ from pipeline_mako import render_require_js_path_overrides
             color: #535353;
             font-size: 13px;
             }
-
-
         .social-menu ul {
             padding: 0;
             margin: 0;
             display: flex;
         }
-
         .social-menu ul li {
             list-style: none;
             margin: 0 10px
         }
-
         .social-menu ul li .fa {
             font-size: 16px;
             line-height: 31px;
             color: #fff;
         }
-
-        
-
         .social-menu ul li a {
             position: relative;
             display: block;
@@ -454,14 +439,14 @@ from pipeline_mako import render_require_js_path_overrides
             text-align: center;
             transition: .3s;
            
-        }
-
-        
-
+        }     
         .social-menu ul li:nth-child(1) {
             margin-left: 0px;
             margin-right: 10px;
         }
+
+
+
 
         
         
@@ -889,6 +874,65 @@ flex-basis: 100%;
 }
 
 }
+
+/* Responsive for jumbo carousel  start*/
+@media screen and (max-width: 1114px){
+    .carousel__content__wrapper .text-content p{
+  font-size: 36px;
+}
+.carousel__content__wrapper .text-content h1{
+  font-size: 90px;
+}
+}
+@media screen and (max-width: 1012px){
+    .carousel__content__wrapper .image_three {
+  display: none;
+} 
+}
+@media screen and (max-width: 882px){
+    .carousel__content__wrapper .image_two {
+  display: none;
+} 
+}
+@media screen and (max-width: 808px){
+ .carousel__content__wrapper .image_one {
+  display: none;
+} 
+.carousel {
+    height: 400px;
+}
+} 
+@media screen and (max-width: 660px){
+    .carousel__content__wrapper .text-content p{
+  font-size: 32px;
+}
+.carousel__content__wrapper .text-content h1{
+  font-size: 80px;
+}
+}
+@media screen and (max-width: 558px){
+    .carousel__content__wrapper .text-content {
+  
+  padding: 64px 0 64px 40px ;
+  
+}
+}
+@media screen and (max-width: 520px){
+    .carousel__content__wrapper .text-content p{
+  font-size: 24px;
+}
+.carousel__content__wrapper .text-content h1{
+  font-size: 60px;
+  line-height: 1;
+}
+}
+@media screen and (max-width: 429px){
+    .carousel__content__wrapper {
+  padding: 40px 20px;
+}
+}
+/* Responsive for jumbo carousel  end*/
+
     </style>
 
     <% ga_acct = static.get_value("GOOGLE_ANALYTICS_ACCOUNT", settings.GOOGLE_ANALYTICS_ACCOUNT) %>
