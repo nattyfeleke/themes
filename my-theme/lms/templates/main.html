@@ -360,12 +360,14 @@ from pipeline_mako import render_require_js_path_overrides
             footer .footer-content {
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
             }
 
             footer .footer-content .links {
             display: flex;
             align-items: flex-start;
             gap: 4rem;
+            flex-wrap: wrap;
             }
 
            
@@ -414,26 +416,23 @@ from pipeline_mako import render_require_js_path_overrides
         }
 
         .social-menu ul li .fa {
-            font-size: 15px;
-            line-height: 30px;
-            transition: .3s;
-            color: black;
-        }
-
-        .social-menu ul li .fa:hover {
+            font-size: 16px;
+            line-height: 31px;
             color: #fff;
         }
+
+        
 
         .social-menu ul li a {
             position: relative;
             display: block;
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
-            background-color: #f2f0ef;
+            background-color: #c32026;
             text-align: center;
             transition: .3s;
-            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+           
         }
 
         
@@ -443,22 +442,7 @@ from pipeline_mako import render_require_js_path_overrides
             margin-right: 10px;
         }
 
-        .social-menu ul li:nth-child(1) a:hover {
-            background-color: #3b5999;
-        }
-
-        .social-menu ul li:nth-child(2) a:hover {
-            background-color: #55acee;
-        }
-
-        .social-menu ul li:nth-child(3) a:hover {
-            background-color: #e4405f;
-        }
-
-        .social-menu ul li:nth-child(4) a:hover {
-            background-color: #0077B5;
-        }
-
+        
         
         @media (min-width: 992px){
             .global-header .nav-links .primary {
