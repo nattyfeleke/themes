@@ -124,6 +124,10 @@ html {
   padding: 0;
 }
 
+.carousel__indicator:hover {
+  background: rgba(0,0,0,0.3);
+}
+
 .carousel__indicator.current-slide {
   background: rgba(0,0,0,0.75);
 }
