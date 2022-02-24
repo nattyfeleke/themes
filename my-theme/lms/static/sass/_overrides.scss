@@ -120,6 +120,8 @@ html {
   width: 15px;
   background: rgba(0,0,0,0.3);
   cursor: pointer;
+  box-shadow: none;
+  padding: 0;
 }
 
 .carousel__indicator.current-slide {
