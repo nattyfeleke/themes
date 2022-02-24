@@ -170,12 +170,14 @@ html {
 font-weight: lighter;
   font-size: 120px;
   line-height: 0.75;
+  color: white;
+  text-align: left;
 }
 
 /* Image one css */
 .carousel__content__wrapper .image_one {
   position: absolute;
-  bottom: 0;
+  bottom: -9%;
   right: 4.85%;
   height: 348px;
   width: 370px;
@@ -238,7 +240,7 @@ font-weight: lighter;
 /* Image three css */
 .carousel__content__wrapper .image_three {
   position: absolute;
-  bottom: 14%;
+  bottom: 5%;
   right: 36%;
   height: 148px;
   width: 148px;
