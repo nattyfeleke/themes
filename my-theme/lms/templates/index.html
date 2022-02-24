@@ -11,25 +11,166 @@ from openedx.core.djangolib.markup import HTML, Text
 <main id="main" aria-label="Content" tabindex="-1">
   <section class="home">
     <header>
-      <div class="jumo-holder">  
-       <div class="jumbo">
-        <div class="jumbo-content">
-            <div class="text-area">
-                <h2>This is Gobeze</h2>
-                <p>Learn 100% online with working profesionals and industry experts. <br /><span class="hide-sm"> Develop hobbies, new skills
-                    and
-                    career-changing expertise with our <br />flexible courses.</span></p>
-                <div class="jumbo-btn">
-                    <a href="#courses" style="color: white;"> <b> Explore Courses</b></a>
+       <!-- carousel start -->
+    <div class="carousel">
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+            <!-- main Jumbo -->
+          <li class="carousel__slide current-slide">
+            <div class="carousel__content">
+              <div class="carousel__content__wrapper main-jumbo">
+                <div class="small_circle"></div>
+                <div class="text-content">
+                  <p>Join the next generation of Ethiopians learning on</p>
+                  <h1>Gobeze</h1>
                 </div>
+                <div class="image_one">
+                  <div class="image_one-container">
+                    <img src="static/my-theme/images/image1.png" alt="" />
+                    <div class="circle_one"></div>
+                  </div>
+                </div>
+                <div class="image_two">
+                    <div class="image_two-container">
+                      <img src="static/my-theme/images/image2.png" alt="" />
+                      <div class="circle_two"></div>
+                    </div>
+                  </div>
+                  <div class="image_three">
+                    <div class="image_three-container">
+                      <img src="static/my-theme/images/image3.png" alt="" />
+                      <div class="circle_three"></div>
+                    </div>
+                  </div>
+              </div>
             </div>
+          </li>
+            <!--end main Jumbo -->
+    <!-- shega-jumbo -->
+          <li class="carousel__slide current-slide">
+            <div class="carousel__content">
+              <div class="carousel__content__wrapper shega-jumbo">
+                <div class="small_circle"></div>
+                <div class="text-content">
+                  <p>Join the next generation of Ethiopians learning on</p>
+                  <h1>Gobeze</h1>
+                </div>
+                <div class="image_one">
+                  <div class="image_one-container">
+                    <img src="static/my-theme/images/image1.png" alt="" />
+                    <div class="circle_one"></div>
+                  </div>
+                </div>
+                <div class="image_two">
+                    <div class="image_two-container">
+                      <img src="static/my-theme/images/image2.png" alt="" />
+                      <div class="circle_two"></div>
+                    </div>
+                  </div>
+                  <div class="image_three">
+                    <div class="image_three-container">
+                      <img src="static/my-theme/images/image3.png" alt="" />
+                      <div class="circle_three"></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <!-- end shega-jumbo -->
+          <!-- gobeze-jumbo -->
+          <li class="carousel__slide current-slide">
+            <div class="carousel__content">
+              <div class="carousel__content__wrapper gobeze-jumbo">
+                <div class="small_circle"></div>
+                <div class="text-content">
+                  <p>Join the next generation of Ethiopians learning on</p>
+                  <h1>Gobeze</h1>
+                </div>
+                <div class="image_one">
+                  <div class="image_one-container">
+                    <img src="static/my-theme/images/image1.png" alt="" />
+                    <div class="circle_one"></div>
+                  </div>
+                </div>
+                <div class="image_two">
+                    <div class="image_two-container">
+                      <img src="static/my-theme/images/image2.png" alt="" />
+                      <div class="circle_two"></div>
+                    </div>
+                  </div>
+                  <div class="image_three">
+                    <div class="image_three-container">
+                      <img src="static/my-theme/images/image3.png" alt="" />
+                      <div class="circle_three"></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </li>
+    <!-- end gobeze-jumbo -->
+ <!-- see-jumbo -->
+ <li class="carousel__slide current-slide">
+    <div class="carousel__content">
+      <div class="carousel__content__wrapper see-jumbo">
+        <div class="small_circle"></div>
+        <div class="text-content">
+          <p>Join the next generation of Ethiopians learning on</p>
+          <h1>Gobeze</h1>
         </div>
+        <div class="image_one">
+          <div class="image_one-container">
+            <img src="static/my-theme/images/image1.png" alt="" />
+            <div class="circle_one"></div>
+          </div>
+        </div>
+        <div class="image_two">
+            <div class="image_two-container">
+              <img src="static/my-theme/images/image2.png" alt="" />
+              <div class="circle_two"></div>
+            </div>
+          </div>
+          <div class="image_three">
+            <div class="image_three-container">
+              <img src="static/my-theme/images/image3.png" alt="" />
+              <div class="circle_three"></div>
+            </div>
+          </div>
+      </div>
     </div>
-    </div>
-    <!-- End Jumbo -->
-   
+  </li>
+<!-- end see-jumbo -->
+        </ul>
+      </div>
 
-    
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
+<!-- end carousel -->
+   <!-- our partners start -->
+<div class="our-partners">
+  <h4>Our partners</h4>
+  <div class="partners-list">
+   
+    <div class="partner">
+        <img src="${static.url("images/gobeze.png")}" alt="">
+    </div>
+    <div class="partner">
+        <img src="${static.url("images/seeLogo.png")}" alt="">
+    </div>
+    <div class="partner">
+        <img src="${static.url("images/shega.png")}" alt="">
+    </div>
+    <div class="partner">
+      <img src="${static.url("images/AI.png")}" alt="">
+  </div>
+  </div>
+  
+</div>
+    <!-- our partners end -->
       </header>
      
 
