@@ -269,6 +269,61 @@ font-weight: lighter;
   width: 100%;
 }
 
+@media (max-width: 1114px){
+  .carousel__content__wrapper .text-content p{
+font-size: 36px;
+}
+.carousel__content__wrapper .text-content h1{
+font-size: 90px;
+}
+}
+@media (max-width: 1012px){
+  .carousel__content__wrapper .image_three {
+display: none;
+} 
+}
+@media (max-width: 882px){
+  .carousel__content__wrapper .image_two {
+display: none;
+} 
+}
+@media (max-width: 808px){
+.carousel__content__wrapper .image_one {
+display: none;
+} 
+.carousel {
+  height: 400px;
+}
+} 
+@media (max-width: 660px){
+  .carousel__content__wrapper .text-content p{
+font-size: 32px;
+}
+.carousel__content__wrapper .text-content h1{
+font-size: 80px;
+}
+}
+@media (max-width: 558px){
+  .carousel__content__wrapper .text-content {
+
+padding: 64px 0 64px 40px ;
+
+}
+}
+@media (max-width: 520px){
+  .carousel__content__wrapper .text-content p{
+font-size: 24px;
+}
+.carousel__content__wrapper .text-content h1{
+font-size: 60px;
+line-height: 1;
+}
+}
+@media (max-width: 429px){
+  .carousel__content__wrapper {
+padding: 40px 20px;
+}
+}
 
 
 /*Style for Why Gobeze Section*/
