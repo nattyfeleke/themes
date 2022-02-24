@@ -151,23 +151,24 @@ from openedx.core.djangolib.markup import HTML, Text
       </div>
 <!-- end carousel -->
    <!-- our partners start -->
-   <div class="our-partners">
-    <h4>Our partners</h4>
-    <div class="partners-list">
-      <div class="partner">
-          <img src="./images/image2.png" alt="">
-      </div>
-      <div class="partner">
-          <img src="./images/image1.png" alt="">
-      </div>
-      <div class="partner">
-          <img src="./images/image3.png" alt="">
-      </div>
-      <div class="partner">
-          <img src="./images/image2.png" alt="">
-      </div>
+<div class="our-partners">
+  <h4>Our partners</h4>
+  <div class="partners-list">
+   
+    <div class="partner">
+        <img src="${static.url("images/gobeze.png")}" alt="">
     </div>
-    
+    <div class="partner">
+        <img src="${static.url("images/seeLogo.png")}" alt="">
+    </div>
+    <div class="partner">
+        <img src="${static.url("images/shega.png")}" alt="">
+    </div>
+    <div class="partner">
+      <img src="${static.url("images/AI.png")}" alt="">
+  </div>
+  </div>
+  
 </div>
     <!-- our partners end -->
       </header>
