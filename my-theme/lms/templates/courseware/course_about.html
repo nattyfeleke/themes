@@ -125,7 +125,7 @@ from six import string_types
           </span>
         % elif invitation_only and not can_enroll:
           <div class="go-to-register">
-            <a href="https://register.gobeze.com" class="register-link">Register for this course</a>
+            <a href="https://register.gobeze.com/${course.id}" class="register-link">Register for this course</a>
           </div>
         ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
         ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
