@@ -195,7 +195,27 @@ from pipeline_mako import render_require_js_path_overrides
 .partner img {
     height: 100%;
 }
-
+/* Scroll bar css for our partners list */
+/* width */
+.carousel__track::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .carousel__track::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .carousel__track::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 16px;
+  }
+  
+  /* Handle on hover */
+  .carousel__track::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
         #our-students {
             background-color: #f2f0ef;
             padding-top: 20px;
