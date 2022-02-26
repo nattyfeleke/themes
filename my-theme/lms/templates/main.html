@@ -397,6 +397,26 @@ from pipeline_mako import render_require_js_path_overrides
           }
           }
         
+
+/* Courses listig style */
+.courses-container {
+  padding: 0 80px;
+}
+ul.course-listing {
+    display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.home .courses-container .courses .courses-listing .courses-listing-item {
+    width: 22%;
+}
+@media screen and (max-width: 1189px){
+    .home .courses-container .courses .courses-listing .courses-listing-item {
+    width: 25%;
+}
+          }
 /* Footer style */
 .wrapper {
             box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.1);
