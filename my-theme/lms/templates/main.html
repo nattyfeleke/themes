@@ -207,8 +207,13 @@ from pipeline_mako import render_require_js_path_overrides
 .partners-list {
     display: flex;
     gap: 4rem;
+    justify-content: center;
     overflow-x: auto;
     padding-bottom: 48px;
+}
+@media (min-width: 914px){
+    .partners-list {
+    justify-content: flex-start;
 }
 .partners-list .partner {
     height: 60px;
