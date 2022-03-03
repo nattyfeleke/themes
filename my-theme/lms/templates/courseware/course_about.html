@@ -67,7 +67,7 @@ from six import string_types
         }
       } else if (xhr.status == 403) {
         $('#register_error').text(
-            (xhr.responseText ? xhr.responseText : "${_("Please Sign in first to enroll in courses.") | n, js_escaped_string}")
+            (xhr.responseText ? xhr.responseText : "${_("Please Sign-in first to enroll in this course.") | n, js_escaped_string}")
         ).css("display", "block");
       } else {
         $('#register_error').text(
