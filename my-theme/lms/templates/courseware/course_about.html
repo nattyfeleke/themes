@@ -69,7 +69,7 @@ from six import string_types
         $('#register_error').text(
             (xhr.responseText && xhr.responseText )
         ).css("display", "block");
-        $('#register_error').innerHTML(`Please <a href="/login">Sign-in </a> to enroll to this course`);
+        $('#register_error').html(`Please <a href="/login">Sign-in </a> to enroll to this course`);
       } else {
         $('#register_error').text(
             (xhr.responseText ? xhr.responseText : "${_("An error occurred. Please try again later.") | n, js_escaped_string}")
