@@ -5,7 +5,7 @@ html {
   box-sizing: border-box;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 0px;
+  // padding-bottom: 0px;
   border-bottom: 1px solid #ff0012;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
@@ -14,8 +14,8 @@ html {
     a {
       .logo {
         float: left;
-        height: 60px;
-        margin-top: -10px;
+        height: 30px;
+        // margin-top: -10px;
       }
     }
   }
