@@ -37,6 +37,8 @@ from pipeline_mako import render_require_js_path_overrides
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NG6JJ9WTKH"></script>
 <script>
@@ -170,6 +172,358 @@ from pipeline_mako import render_require_js_path_overrides
         .overflow-visible{
             overflow: visible;
         }
+
+        /* Jumbo css start  */
+        .carousel {
+    position: relative;
+    height: 480px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.carousel__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel__track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 12px;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background: rgba(0,0,0,0.75);
+}
+
+.carousel__content__wrapper {
+    background-color: #d72630;
+    padding: 40px;
+    position: relative;
+    height: 100%;
+}
+
+
+/* Style for the dots  */
+.dots {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.dot {
+    background-color: white;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
+/* start siltena jumbo css */
+.carousel__content__wrapper.siltena-jumbo {
+    background-color: #d72630;
+    color: white;
+    position: relative;
+}
+.siltena-jumbo .middle-circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25%;
+}
+
+.siltena-jumbo .middle-circle img {
+    filter: grayscale(0.1);
+}
+.siltena-jumbo .content-wrap  {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 40px;
+}
+.siltena-jumbo .text-content{
+    max-width: 500px;
+}
+.siltena-jumbo .text-content p{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.25;
+    font-weight: 300;
+}
+.siltena-jumbo .text-content h1{
+    font-family: 'Roboto', sans-serif;
+font-weight: lighter;
+    font-size: 68px;
+    line-height: 1.5;
+    font-weight: 300;
+    text-transform: uppercase;
+    
+}
+
+.siltena-jumbo .image-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.dots-siltena {
+    position: absolute;
+    bottom:  200px;
+    right: 162px;
+}
+
+/* start gobeze training css  */
+.carousel__content__wrapper.gobeze-jumbo {
+    background-color: #ff8119;
+}
+
+.gobeze-jumbo .image-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.top-dots-gobeze {
+    position: absolute;
+    top: 72px;
+    right: 8px;
+}
+
+.gobeze-jumbo .content-wrap {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.gobeze-jumbo .content-wrap .contents{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4rem;
+    color: white;
+}
+.gobeze-jumbo .content-wrap .contents .logo-wrap{
+    height: 80px;
+}
+.gobeze-jumbo .content-wrap .contents .logo-wrap img {
+    height: 100%;
+}
+
+.gobeze-jumbo .content-wrap .contents .provider {
+    text-align: right;
+}
+
+.gobeze-jumbo .content-wrap .contents .provider p {
+    font-weight: 100;
+   font-size: 34px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.gobeze-jumbo .content-wrap .contents .provider h3 {
+    font-weight: 300;
+    font-size: 62px;
+   font-family: 'Roboto', sans-serif;
+}
+.gobeze-jumbo .content-wrap .contents  .course-link a  {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  font-weight: 100;
+border: 1px solid;
+   border-radius: 24px;
+   padding: 4px 16px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* end gobeze training css  */
+/* start see  css  */
+.carousel__content__wrapper.see-jumbo {
+    background-color: #468a7a;
+}
+
+.see-jumbo .top-dots-gobeze-cont {
+    position: absolute;
+    top: 72px;
+    left: 8px;
+}
+.see-jumbo .image-wrap {
+    position: absolute;
+    bottom: 64px;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.see-jumbo .logo-wrap {
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.see-jumbo .logo-wrap img {
+    height: 100%;
+}
+.see-jumbo .content-wrap  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+}
+
+.see-jumbo .content-wrap .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    color: white;
+}
+
+.see-jumbo .content-wrap .contents .provider {
+    text-align: left;
+    max-width: 506px;
+}
+.see-jumbo .content-wrap .contents .provider p{
+    font-weight: 100;
+    font-size: 21px; font-family: 'Roboto', sans-serif;
+ }
+ .see-jumbo .content-wrap .contents .provider h3{
+    font-weight: 300;
+    font-size: 62px; font-family: 'Roboto', sans-serif;
+ }
+ .see-jumbo .top-dots-see {
+    position: absolute;
+    top: 116px;
+    right: 8px;
+}
+/* end see  css  */
+
+/* start shega css  */
+.carousel__content__wrapper.shega-jumbo {
+    background-color: #e82933;
+}
+
+.shega-jumbo .top-dots-see-cont {
+    position: absolute;
+    top: 108px;
+    left: 8px;
+}
+.shega-jumbo .image-wrap {
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.shega-jumbo .other-text {
+    position: absolute;
+    top: 337px;
+    left: 324px;
+    color: white;
+    max-width: 318px;
+}
+
+.shega-jumbo .other-text .dots-relative{
+    position: relative;
+}
+.shega-jumbo .other-text .dots-absolute{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+.shega-jumbo .other-text p {
+    font-weight: 300;
+   font-size: 24px;
+   margin-bottom: 16px;
+    font-size: 21px; font-family: 'Roboto', sans-serif;
+}
+.shega-jumbo .content-wrap {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.shega-jumbo .content-wrap .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4rem;
+    color: white;
+}
+.shega-jumbo .content-wrap .contents .logo-wrap {
+    height: 80px;
+}
+.shega-jumbo .content-wrap .contents .logo-wrap img {
+    height: 100%;
+}
+.shega-jumbo .content-wrap .contents .provider {
+    text-align: right;
+}
+.shega-jumbo .content-wrap .contents .provider p{
+    font-weight: 100;
+    font-size: 34px;
+    margin-bottom: 16px;
+    font-size: 21px; font-family: 'Roboto', sans-serif;
+ }
+ .shega-jumbo .content-wrap .contents .provider h3{
+    font-weight: 300;
+    font-size: 62px;
+    text-transform: uppercase;
+    width: fit-content;
+   display: table;
+   margin-left: auto;
+ }
+ .shega-jumbo .content-wrap .contents .provider h2{
+    font-weight: 300;
+    font-size: 44px;
+    text-transform: uppercase;
+    width: fit-content;
+   display: table;
+   margin-left: auto;
+ }
+
+.shega-jumbo .top-dots-see {
+    position: absolute;
+    top: 172px;
+    right: 8px;
+}
+/* end shega css  */
+        /* Jumbo css end  */
 /* For error display on course about page */
 .course-info header.course-profile .intro-inner-wrapper .intro .main-cta #register_error {
     width: fit-content;
