@@ -267,7 +267,6 @@ background: linear-gradient(90deg, rgba(215,16,22,1) 0%, rgba(215,16,21,1) 20%, 
     top: -8px;
 }
 
-
 .siltena-jumbo .content-wrap  {
     position: absolute;
     top: 25%;
@@ -282,14 +281,14 @@ background: linear-gradient(90deg, rgba(215,16,22,1) 0%, rgba(215,16,21,1) 20%, 
     line-height: 1.25;
     font-weight: 300;
 }
+
 .siltena-jumbo .text-content h1{
     font-family: 'Roboto', sans-serif;
-font-weight: lighter;
+    font-weight: lighter;
     font-size: 68px;
     line-height: 1.5;
     font-weight: 400;
     text-transform: uppercase;
-    
 }
 
 .siltena-jumbo .image-wrap {
@@ -363,6 +362,7 @@ background: linear-gradient(90deg, rgba(255,121,40,1) 0%, rgba(255,134,16,1) 100
     font-size: 62px;
    font-family: 'Roboto', sans-serif;  color: white;
 }
+
 .gobeze-jumbo .content-wrap .contents  .course-link a  {
     text-decoration: none;
     color: white;
@@ -437,6 +437,42 @@ border: 1px solid;
     font-weight: 300;
     font-size: 62px; font-family: 'Roboto', sans-serif;  color: white;
  }
+
+ @media screen and (max-width: 830px){
+    /* Siltena  */
+    .siltena-jumbo .content-wrap  {
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    z-index: 10;
+}
+    .siltena-jumbo .text-content p{
+    font-size: 36px;
+}
+    .siltena-jumbo .text-content h1{
+    font-size: 56px;
+}
+/* Gobeze */
+.gobeze-jumbo .content-wrap .contents .provider p {
+   font-size: 24px;
+}
+
+.gobeze-jumbo .content-wrap .contents .provider h3 {
+    font-size: 56px;
+}
+.gobeze-jumbo .image-wrap .dots-gobeze {
+    margin-top: -24px;
+}
+/* See */
+.see-jumbo .content-wrap .contents .provider p{
+    font-size: 18px;
+ }
+ .see-jumbo .content-wrap .contents .provider h3{
+    font-size: 56px; 
+ }
+
+}
+
  .see-jumbo .top-dots-see {
     position: absolute;
     top: 116px;
@@ -445,7 +481,7 @@ border: 1px solid;
 .see-jumbo .bottom-dots-see {
     position: absolute;
     bottom: 64px;
-    right: 10%;
+    right: 140px;
 }
 /* end see  css  */
 
@@ -1149,6 +1185,12 @@ margin: 0;
   }
   
 }
+@media screen and (max-width: 800px ){
+  .md-hide{
+    display: none;
+  }  
+}
+
 @media screen and (max-width: 556px){
   .text-area{
     top: 25%;
