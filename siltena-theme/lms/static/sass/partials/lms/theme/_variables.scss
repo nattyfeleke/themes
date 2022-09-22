@@ -1,0 +1,14 @@
+// Sample dark theme to demonstrate SASS overrides
+
+// Theme colors
+//
+// Note: define colors needed by your theme first
+
+// Make the theme white on black
+$primary: #8B6C38;
+
+// Theme fonts
+$font-family-sans-serif: arial;
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';
