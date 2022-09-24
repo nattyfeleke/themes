@@ -1,0 +1,35 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("For Business")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+  <div class="d-jumbo">
+    <div class="d-jumbo-content">
+        <div class="download-text">
+          <h1>Learn. Anywhere.</h1>
+   
+    <p>All the power of Siltena's e-learning website, in the palm of your hand. Download the Siltena mobile app today.</p>  
+        </div>
+        <div class="mockup">
+          <img src="static/my-theme/images/mockup.png" alt="">  
+          <div class="d-buttons">
+              <a class="download-button" href="https://gobezevideos.s3.eu-central-1.amazonaws.com/siltenaV1.apk">
+                <div style="display: flex; align-items: center;" >
+                  <div>
+                    <i class="fa fa-android" style="margin-right: 8px;font-size: 32px;" aria-hidden="true"></i>
+                  </div>
+                  <div>
+<span class="lightcolor"> 
+            Download for</span></br> Android
+                  </div>
+        
+    </div> 
+              </a>           
+    </div>
+        </div>        
+</div>
+</div>
+
+</main>
