@@ -1,0 +1,862 @@
+html {
+  scroll-behavior: smooth;
+}
+.global-header {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  // padding-bottom: 0px;
+  // border-bottom: 1px solid #ff0012;
+  border-bottom: none;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  line-height: 1.5;
+  .header-logo {
+    a {
+      .logo {
+        float: left;
+        height: 30px;
+        // margin-top: -10px;
+      }
+    }
+  }
+}
+
+.header-global h1.logo img {
+  max-height: 40px;
+}
+
+.global-header .nav-links .nav-item a {
+  font-size: 0.875rem;
+}
+/*.home > header {
+	background: url('../images/bg-pic.png');
+	background-size: cover;
+	background-position: 50%;
+	
+	.outer-wrapper {
+		padding-top: 150px;
+	    padding-bottom: 150px;
+	}
+	.title {
+		background: transparent;
+		box-shadow: none;
+		margin-left: 0;
+
+		> .heading-group h1 {
+                        font-size: 180px;
+			color: #66D8F2;
+			text-shadow: none;
+		}
+		> .heading-group p {
+			font-size: 50px;
+			color: #fff;
+		}
+	}
+}*/
+.home {
+  background-color: #f2f0ef;
+}
+
+.home > header {
+  background: none;
+}
+/*Styles for the icons*/
+.fa-c {
+  color: #FF9C00;
+  border-bottom: 2px solid;
+}
+.fa {
+  padding-bottom: 10px;
+}
+
+/*Style for the Carousel*/
+.carousel {
+  position: relative;
+  height: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel__content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 12px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+  box-shadow: none;
+  padding: 0;
+}
+
+button.carousel__indicator:hover {
+  background: rgba(0,0,0,0.3);
+}
+
+.carousel__indicator.current-slide {
+  background: #040707;
+}
+
+.carousel__content__wrapper {
+  background-color: #d72630;
+  padding: 40px;
+  position: relative;
+  height: 100%;
+}
+.carousel__content__wrapper.main-jumbo {
+  background-color: #040707;
+}
+.carousel__content__wrapper .small_circle{
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.carousel__content__wrapper .text-content {
+  color: white;
+  max-width: 683px;
+  
+}
+
+.carousel__content__wrapper .text-content p{
+  font-size: 48px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.25;
+}
+.carousel__content__wrapper .text-content h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: lighter;
+  font-size: 120px;
+  line-height: 0.75;
+  color: white;
+  text-align: left;
+}
+
+/* Image one css */
+.carousel__content__wrapper .image_one {
+  position: absolute;
+  bottom: -15%;
+  right: 4.85%;
+  height: 348px;
+  width: 370px;
+  z-index: 1;
+}    
+.image_one .image_one-container{
+  position: relative;
+}
+.image_one-container .circle_one{
+  position: absolute;
+  border: 1px solid white;
+  transform: scale(0.9);
+  width: 348px;
+  height: 348px;
+  border-radius: 50%;
+  top:-4px;
+  right: 4%;
+
+}
+
+.image_one-container  img {
+  position: absolute;
+  top: 0;
+  left:0;
+  clip-path: circle(50% at 50% 50%);
+  width: 100%;
+}
+
+/* Image two css */
+.carousel__content__wrapper .image_two {
+  position: absolute;
+  top: 5%;
+  right: 6%;
+  height: 204px;
+  width: 204px;
+}    
+.image_two .image_two-container{
+  position: relative;
+}
+.image_two-container .circle_two{
+  position: absolute;
+  border: 1px solid white;
+  transform: scale(1.3);
+  width: 204px;
+  height: 204px;
+  border-radius: 50%;
+  left: 9%;
+  z-index: 2;
+
+}
+
+.image_two-container  img {
+  position: absolute;
+  top: 0;
+  left:0;
+  clip-path: circle(50% at 50% 50%);
+  width: 100%;
+}
+
+/* Image three css */
+.carousel__content__wrapper .image_three {
+  position: absolute;
+  bottom: 5%;
+  right: 36%;
+  height: 148px;
+  width: 148px;
+  z-index: 3;
+}    
+.image_three .image_three-container{
+  position: relative;
+}
+.image_three-container .circle_three{
+  position: absolute;
+  border: 1px solid white;
+  transform: scale(1.3);
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  right: 7%;
+  z-index: 2;
+
+}
+
+.image_three-container  img {
+  position: absolute;
+  top: 0;
+  left:0;
+  clip-path: circle(50% at 50% 50%);
+  width: 100%;
+}
+
+@media (max-width: 1114px){
+  .carousel__content__wrapper .text-content p{
+font-size: 36px;
+}
+.carousel__content__wrapper .text-content h1{
+font-size: 90px;
+}
+}
+@media (max-width: 1012px){
+  .carousel__content__wrapper .image_three {
+display: none;
+} 
+}
+@media (max-width: 882px){
+  .carousel__content__wrapper .image_two {
+display: none;
+} 
+}
+@media (max-width: 808px){
+.carousel__content__wrapper .image_one {
+display: none;
+} 
+.carousel {
+  height: 400px;
+}
+} 
+@media (max-width: 660px){
+  .carousel__content__wrapper .text-content p{
+font-size: 32px;
+}
+.carousel__content__wrapper .text-content h1{
+font-size: 80px;
+}
+}
+
+@media (max-width: 520px){
+  .carousel__content__wrapper .text-content p{
+font-size: 24px;
+}
+.carousel__content__wrapper .text-content h1{
+font-size: 60px;
+line-height: 1;
+}
+}
+@media (max-width: 429px){
+  .carousel__content__wrapper {
+padding: 40px 20px;
+}
+}
+
+
+/*Style for Why Gobeze Section*/
+#why-gobeze {
+  padding: 50px 0;
+  background-color: white;
+  color: #040707;
+}
+.con {
+  color: #040707;
+  margin: 10px 8%;
+}
+.con .titles {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+.con .titles h2 {
+  color: #343636;
+  font-family: Arial;
+  font-weight: bold;
+}
+.con .cards {
+  text-align: center;
+  margin: 50px 0;
+  display: flex;
+}
+.cards .card {
+  /* border: 1px solid black; */
+  position: relative;
+  width: 28%;
+  margin-right: 6%;
+  flex-grow: 1;
+}
+.cards .card:last-child {
+  margin-right: 0;
+}
+.cards .card .ic {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cards .card h3 {
+  text-align: left;
+  text-transform: capitalize;
+  margin-top: 35px;
+  font-size: 1.75rem;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.cards .card p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 2;
+  text-align: left;
+}
+
+/*Styles for Learners and Gobeze for Business*/
+#learn-teach {
+ 
+}
+#learn-teach .holder {
+  display: flex;
+  color: white;
+}
+#learn-teach .holder .half {
+  width: 100%;
+}
+#learn-teach .holder .sec-r {
+  background-image: url('../images/t-r.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform: scale(1);
+}
+#learn-teach #effect-r,
+#learn-teach #effect-l {
+  transform: scale(1);
+  transition: transform 0.4s;
+}
+#learn-teach #effect-r.effect-r,
+#learn-teach #effect-l.effect-l {
+  transform: scale(1.05);
+}
+#learn-teach .holder .sec-r h2 {
+  font-family: Arial;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+}
+#learn-teach .holder .sec-l {
+  background-image: url('../images/t-l.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+#learn-teach .holder .sec-l .transbox-l {
+  padding: 6% 8% 6% 6%;
+  background: rgba(77, 77, 77, 0.6);
+  height: 100%;
+}
+.learn {
+  border-radius: 40px;
+}
+#learn-teach .holder .sec-r .transbox-r {
+  padding: 6% 6% 6% 8%;
+  background: rgba(249, 129, 6, 0.6);
+  height: 100%;
+}
+#learn-teach .holder .sec-l h2 {
+  font-family: Arial;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+}
+#learn-teach .holder h2 {
+}
+#learn-teach .holder p {
+  margin-top: 10px;
+  font-size: 1 rem;
+  line-height: 1.5;
+}
+#learn-teach .holder .learn {
+  margin-top: 10px;
+  width: 160px;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+#learn-teach .holder .learn a {
+  text-decoration: none;
+  color: white;
+}
+#learn-teach .holder .learn:hover {
+  background-color: #8B6C35;
+}
+
+
+//Courses
+.courses-container {
+  padding: 0 80px;
+  background-color: #f2f0ef; 
+}
+@media screen and (max-width: 556px){
+  .courses-container {
+padding: 0 40px;
+}
+        }
+
+.courses-container .courses .featured {
+  text-align: left;
+  margin-bottom: 48px;
+  color: rgba(4, 7, 7, 0.8);
+  font-family: Verdana;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Courses listig style */
+
+ul.courses-listing {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  .home .courses-container .courses .courses-listing .courses-listing-item {
+    width: 22%;
+}
+@media screen and (max-width: 1189px){
+    .home .courses-container .courses .courses-listing .courses-listing-item {
+    width: 25%;
+}
+}
+@media screen and (max-width: 1081px){
+    .home .courses-container .courses .courses-listing .courses-listing-item {
+    width: 29.5%;
+}}
+@media screen and (max-width: 951px){
+    .home .courses-container .courses .courses-listing .courses-listing-item {
+    width: 40%;
+}}
+@media screen and (max-width: 717px){
+    .home .courses-container .courses .courses-listing .courses-listing-item {
+    width: 45%;
+}}
+@media screen and (max-width: 617px){
+    .home .courses-container .courses .courses-listing .courses-listing-item {
+    width: 100%;
+}
+          }
+.courses-container .courses .course {
+  border-bottom: 3px solid #040707;
+}
+
+.courses-container .courses .course .course-info {
+  height: 144px;
+  font-family: arial;
+}
+.courses-container .courses .course .course-info .course-title {
+  line-height: 23.68px;
+  margin: 15px 0 33px 0;
+  padding: 0 15px;
+  height: 35px;
+  color: #000;
+}
+.courses-container .courses .course .course-info .course-date {
+  line-height: 22px;
+  padding: 2px 15px;
+}
+
+/*Styles for teach with us page*/
+
+#t-jumbo {
+  background-image: url('../images/peoplestanding.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+#t-jumbo .colorant {
+  background: rgba(237, 27, 45, 0.5);
+}
+#t-jumbo .t-content {
+  padding: 10%;
+  color: white;
+}
+
+#t-jumbo .t-content h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+#t-jumbo .t-content h2 {
+  color: white;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/*Why teach on Gobeze*/
+section.t-why {
+  margin: 40px 10%;
+  text-align: center;
+  max-width: 80%;
+}
+.t-why h1 {
+  /* margin-bottom: 20px; */
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: orangered;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+.t-why .text-1 {
+  margin: 40px 0;
+}
+.t-why .text-1 p {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 20px;
+  text-align: left;
+  padding-left: 15px;
+  border-left: 11px solid #ff7e00;
+}
+.t-why .text-2 p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 20px;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 11px solid #ff7e00;
+}
+
+/*How teaching works*/
+#how-teaching {
+  margin: 60px 10%;
+  padding: 20px;
+}
+#how-teaching .t-title h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: orangered;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#how-teaching .t-cards {
+  display: flex;
+}
+
+#how-teaching .t-cards .t-card {
+  /* border: 1px solid black; */
+  padding-right: 2%;
+  position: relative;
+}
+#how-teaching .t-cards .t-card h1.number {
+  position: absolute;
+  top: -43px;
+  left: 0%;
+  padding: 0;
+  margin: 0;
+  opacity: 0.1;
+  font-size: 14rem;
+}
+#how-teaching .t-cards .t-card:last-child {
+  padding-right: 0;
+}
+#how-teaching .t-cards .t-card h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+#how-teaching .t-cards .t-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+#how-teaching .t-cards .t-card img.item-imgs {
+  width: 100%;
+  max-height: 120px;
+  padding: 25px 0;
+}
+
+/*Ready to start Teaching*/
+#ready {
+  margin: 60px 10%;
+  padding: 20px;
+  text-align: center;
+}
+#ready .t-title h1 {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: orangered;
+}
+#ready p {
+  margin-top: 20px;
+}
+
+/*Styles for Government Page*/
+
+.all-wrapper {
+  margin-top: 30px;
+}
+
+.g-cont {
+  padding: 0 10%;
+  display: flex;
+}
+.g-cont .g-img img {
+  height: 330px;
+}
+.g-cont .g-text {
+  text-align: center;
+  margin: auto 0;
+  padding-left: 40px;
+}
+.g-cont .g-text .g-headline {
+  text-align: left;
+}
+.g-cont .g-text .g-headline h1 {
+  font-weight: bold;
+  text-align: left;
+  font-size: 2.2rem;
+  color: black;
+  margin-bottom: 0;
+}
+.g-cont .g-text p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+.g-cont .g-text .bbtn {
+  margin-top: 30px;
+  text-align: left;
+  background-color: #ed1b2d;
+  border-radius: 3px;
+  padding: 20px;
+  width: fit-content;
+  cursor: pointer;
+}
+.g-cont .g-text .bbtn:hover {
+  background-color: #c71827;
+}
+.g-cont .g-text .bbtn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  /* letter-spacing: 1.5px; */
+}
+
+/* Section Two: Power your learning */
+
+#pow {
+  background-color: #ed1b2d;
+}
+#pow .pow-cont {
+  margin: 30px 60px;
+  padding: 5% 20px;
+  text-align: center;
+}
+#pow .pow-cont .p-heading {
+  color: white;
+}
+#pow .pow-cont .p-heading h1 {
+  font: bold 2.5rem Arial;
+  color: white;
+  margin-bottom: 0;
+}
+#pow .pow-cont .req-btn {
+  padding: 12px;
+  background-color: white;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 33px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+#pow .pow-cont .req-btn:hover {
+  background-color: #ff7e00;
+}
+#pow .req-btn a {
+  text-decoration: none;
+  color: #ed1b2d;
+  font-size: 1.2rem;
+  letter-spacing: 0.035rem;
+}
+
+/* Section Three: Prepare */
+#prepare {
+  margin: 20px 10%;
+  text-align: center;
+}
+#prepare .prep-head {
+  text-align: center;
+}
+#prepare .prep-head h1 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+#prepare .g-cards {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#prepare .g-cards .g-card {
+  width: 32%;
+  padding-right: 2%;
+}
+#prepare .g-cards .g-card:last-child {
+  padding-right: 0;
+}
+#prepare .g-cards .g-card .g-card-img {
+}
+#prepare .g-cards .g-card .g-card-img img.card-imgs {
+  width: auto;
+  max-height: 132px;
+  padding: 25px 0;
+}
+#prepare .g-cards .g-card h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+#prepare .g-cards .g-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+// Downloads page style
+.download-text {
+  text-align: center;
+}
+.download-text h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin: 36px 0;
+  font-weight: bold;
+}
+.download-text p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #767676;
+}
+.d-jumbo {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.d-jumbo .d-jumbo-content {
+  margin: 0 64px;
+}
+
+.d-jumbo .d-jumbo-content .mockup {
+  padding: 36 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.d-buttons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+.d-buttons .download-button {
+  text-decoration: none;
+  color: #313131;
+  width: 132px;
+  padding: 2px 6px;
+  text-align: left;
+  line-height: 1.5;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: 16px;
+  font-size: small;
+}
+
+.lightcolor {
+  color: #cccccc;
+}
