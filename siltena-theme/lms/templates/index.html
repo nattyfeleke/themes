@@ -1,0 +1,413 @@
+<%page expression_filter="h"/>
+<%inherit file="main.html" />
+<%namespace name='static' file='static_content.html'/>
+<%!
+from django.utils.translation import gettext as _
+from django.urls import reverse
+
+from openedx.core.djangolib.markup import HTML, Text
+%>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="home">
+        <header>
+            <!-- carousel start -->
+            <div class="carousel">
+             <div class="carousel__track-container">
+               <ul class="carousel__track">
+                   <!-- sitlena Jumbo -->
+               <li class="carousel__slide current-slide">
+                 <div class="carousel__content">
+                   <div class="carousel__content__wrapper siltena-jumbo">
+                     <div class="middle-circle">
+                       
+                         <img src="${static.url("images/siltenaCircle.png")}" alt="" />
+                     </div>
+                          <div class="content-wrap">
+     
+                          
+                           <div class="text-content">
+                            <p >Join the next generation of Ethiopians learning on  </p>
+                            <h1>Siltena.</h1>
+                        
+                   </div>
+                  </div>
+                   <div class="image-wrap">
+                       
+                       <img class="hide-sm" src="${static.url("images/siltenaWide.png")}" alt=""/>
+                       
+                   </div>
+                   <div class="dots-siltena">
+                       <div class="dots">
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                       </div>
+                   </div>
+                   </div>
+                 </div>
+               </li>
+                 <!--end sitlena Jumbo -->
+                 <!-- gobeze-jumbo -->
+      <li class="carousel__slide current-slide">
+       <div class="carousel__content">
+         <div class="carousel__content__wrapper gobeze-jumbo">
+     
+           <div class="image-wrap">
+     
+             <img class="hide-sm" src="${static.url("images/gobeze_traning_wide.png")}"  alt="" />
+             <div class="dots-gobeze">
+     
+            
+             <div class="dots">
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+             </div> </div>
+         </div>
+         <div class="content-wrap">
+             <div class="contents">
+                 <div class="logo-wrap">
+                     <img src="${static.url("images/gobeze_training_logo.png")}"  alt="" />
+                 </div>
+                 <div class="provider">
+                  <p >Know.Now.</p>
+                 <h3 >Gobeze Training</h3>   
+                 </div>
+                 
+     
+                 <div class="course-link">
+                     <a href="#!">Graphic Design</a>  
+                 </div>
+             </div>
+         </div>
+         <div class="top-dots-gobeze">
+             <div class="dots">
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+             </div>
+         </div>
+         <div class="gobeze-circle">
+           <img src="${static.url("images/gobezeCircle.png")}"  alt="" />
+       </div>
+         </div>
+       </div>
+     </li>
+     <!-- end gobeze-jumbo -->
+               <!-- see-jumbo -->
+      <li class="carousel__slide current-slide">
+       <div class="carousel__content">
+         <div class="carousel__content__wrapper see-jumbo">
+           <div class="top-dots-gobeze-cont">
+             <div class="dots">
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+             </div>
+         </div>
+         <div class="see-circle">
+           <img src="${static.url("images/seeCircle.png")}" alt="" />
+         </div>
+         <div class="content-wrap">
+             <div class="contents">
+                
+                 <div class="provider">
+                  <p >To build a strong social enterprise 
+                     ecosystem in Ethiopia take a course with </p>
+                 <h3 >Social Enterprise Ethiopia</h3>   
+                 </div>
+                 
+             </div>
+         </div>
+         <div class="logo-wrap">
+             <img src="${static.url("images/see_logo.png")}"  alt="" />
+         </div>
+         <div class="image-wrap">
+             
+             <img class="hide-sm" src="${static.url("images/see_wide.png")}" alt="" />
+             
+         </div>
+         <div class="top-dots-see">
+             <div class="dots">
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+                 <div class="dot"></div>
+             </div>
+         </div>
+         <div class="bottom-dots-see hide-sm">
+           <div class="dots">
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+           </div>
+       </div>
+         </div>
+       </div>
+     </li>
+     <!-- end see-jumbo -->
+     
+                <!-- shega-jumbo -->
+                <li class="carousel__slide current-slide">
+                 <div class="carousel__content">
+                   <div class="carousel__content__wrapper shega-jumbo">
+                     <div class="top-dots-see-cont">
+                       <div class="dots">
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                       </div>
+                   </div>
+                   <div class="image-wrap">
+                      
+                       <img class="hide-sm" src="${static.url("images/shega_wide.png")}"  alt="" />
+                   
+                   </div>
+                   <div class="other-text md-hide">
+                       <div class="dots-relative">
+                           <div class="dots-absolute">
+                           <div class="dots">
+                               <div class="dot"></div>
+                               <div class="dot"></div>
+                               <div class="dot"></div>
+                               <div class="dot"></div>
+                               <div class="dot"></div>
+                               <div class="dot"></div>
+                               <div class="dot"></div>
+                           </div>
+                           </div>
+                       </div>
+                       <p >Fullfill your dream of owning your own business</p>
+                   </div>
+                   <div class="content-wrap">
+                       <div class="contents">
+                           <div class="logo-wrap">
+                               <img src="${static.url("images/shega_logo.png")}" alt="" />
+                           </div>
+                           <div class="provider">
+                            <p >Start your journey here!</p>
+                            <h3 >Shega </h3>   
+                            <h2 >for Agents </h2>   
+                           </div>
+                          
+                       </div>
+                   </div>
+                   <div class="top-dots-see">
+                       <div class="dots">
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                           <div class="dot"></div>
+                       </div>
+                   </div>
+                   
+                   </div>
+                 </div>
+               </li>
+               <!-- end shega-jumbo -->
+        
+               </ul>
+             </div>
+       
+             <div class="carousel__nav">
+               <button class="carousel__indicator current-slide"></button>
+               <button class="carousel__indicator"></button>
+               <button class="carousel__indicator"></button>
+               <button class="carousel__indicator"></button>
+             </div>
+           </div>
+     <!-- end carousel -->
+        <!-- our partners start -->
+     <div class="our-partners">
+       <h4>Our partners</h4>
+       <div class="partners-list">
+         <div class="partner"><img src="${static.url("images/gobeze.png")}"></div>
+         <div class="partner"><img src="${static.url("images/seeLogo.png")}"></div>
+         <div class="partner"><img src="${static.url("images/shega.png")}"></div>
+         <div class="partner"><img src="${static.url("images/AI.png")}"></div>
+         <div class="partner"><img src="${static.url("images/dt.png")}"></div>
+       </div>
+       
+     </div>
+         <!-- our partners end -->
+           </header>
+      <%include file="${courses_list}" />
+<!-- Learn with us & Teach with Us  -->
+<section id="learn-teach">
+    <div class="holder">
+        <div class="half">
+        <div class="sec-l" >
+            <div class="transbox-l">   
+          <div id="effect-l" >
+            <h2>Learn with Us</h2>
+            <p>Short and Immediately applicable courses with working professionals who know the subject matter intimately.</p>
+            <div class="learn">
+                <a href="#courses"><b>Explore Courses</b></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+        <div class="half">
+        <div class="sec-r" >
+            <div class="transbox-r">    
+          <div id="effect-r" >
+            <h2>Teach with Us</h2>
+            <p>Teach on Siltena and share your passion with members all around Ethiopia.</p>
+            <div class="learn">
+                <a href="/teach"><b>Find out more</b></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Learn with us & Teach with Us  -->
+  <!-- Why Siltena? -->
+  <section id="why-gobeze">
+  <div class="con">
+  <div class="titles">
+      <h2>Why Siltena?</h2>
+  </div>
+  <div class="cards">
+      <div class="card">
+          <div class="ic">
+              <i class="fa fa-c fa-graduation-cap" aria-hidden="true"></i>
+          </div>
+          <h3>Learn anything</h3>
+          <p>Whether you want to develop as a professional or discover a new hobby, there's an online course
+              for that. You can even take your learning further with online programs and degrees.</p>
+      </div>
+      <div class="card">
+          <div class="ic">
+           <i class="fa fa-c fa-users" aria-hidden="true"></i>
+          </div>
+          <h3>Learn together</h3>
+          <p>Join other people from around Ethiopia learning together. Online learning is as easy and
+              natural as chatting with a group of friends.</p>
+      </div>
+      <div class="card">
+          <div class="ic">
+              <i class="fa fa-c fa-check-circle" aria-hidden="true"></i>
+          </div>
+          <h3>Learn with experts</h3>
+          <p>Meet educators and working proffesionals and experts, who'll share their experience
+              through videos, articles, quizzes and discussions.</p>
+      </div>
+  </div>
+  
+  </div>
+  </section>
+  <!--End Why Siltena? -->
+  <!-- Our students -->
+  <div id="our-students">
+    <div class="our-stud">
+      <p>People who have attended our programs power some of the best companies in Ethiopia.</p>
+      <p class="line-for-stud"></p>
+    </div>
+    <div class="row">
+      <div class="container">
+        <section class="customer-logos slider">
+          <div class="slide"><img src="${static.url("images/cactus.png")}"></div>
+          <div class="slide"><img src="${static.url("images/bc.png")}"></div>
+          <div class="slide"><img src="${static.url("images/cocacola.png")}"></div>
+          <div class="slide"><img src="${static.url("images/diago.png")}"></div>
+          <div class="slide"><img src="${static.url("images/ethioairlines.png")}"></div>
+          <div class="slide"><img src="${static.url("images/giz.png")}"></div>
+          <div class="slide"><img src="${static.url("images/iceaddis.png")}"></div>
+          <div class="slide"><img src="${static.url("images/rfc.png")}"></div>
+        </section>
+      </div>  
+    </div>
+  </div>
+  <!--End Our students -->
+  
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }]
+      });
+    });
+  </script>
+    </section>
+</main>
+
+% if show_homepage_promo_video:
+  <section id="video-modal" class="modal home-page-video-modal video-modal">
+    <div class="inner-wrapper">
+      <iframe title="YouTube Video" width="640" height="360" src="//www.youtube.com/embed/${homepage_promo_video_youtube_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+% endif
+
+<%block name="js_extra">
+   <script type="text/javascript">
+      $(window).load(function() {
+         if(getParameterByName('next')) {
+              $('#login').trigger("click");
+         }
+      })
+   </script>
+</%block>
+
+% if show_signup_immediately is not UNDEFINED:
+  ## NOTE: This won't work in production, because anonymous views are cached, so it will
+  ## show either with or without this extra js for 3 minutes at a time.
+<script type="text/javascript">
+  $(window).load(function() {$('#signup_action').trigger("click");});
+</script>
+% endif
