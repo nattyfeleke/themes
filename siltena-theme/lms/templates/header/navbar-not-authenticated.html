@@ -40,7 +40,7 @@ from openedx.core.djangoapps.user_authn.toggles import should_redirect_to_authn_
 
   </div>
   <div class="primary">
-    <div style="display: inline;">
+    <div style="margin: 15px 40px 0 0;">
         <div class="nav-courses hidden-mobile">
                 <a class="courses-btn" href="#!" >Courses <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </a>
@@ -94,18 +94,18 @@ from openedx.core.djangoapps.user_authn.toggles import should_redirect_to_authn_
         % if allow_public_account_creation:
           % if should_redirect_to_authn_mfe:
             <div class="mobile-nav-item hidden-mobile nav-item">
-                <a class="register-btn btn" href="${settings.AUTHN_MICROFRONTEND_URL}/login${login_query()}">${_("Sign in")}</a>
+                <a class="sign-btn btn" href="${settings.AUTHN_MICROFRONTEND_URL}/login${login_query()}">${_("Sign in")}</a>
             </div>
           % else:
             <div class="mobile-nav-item hidden-mobile nav-item">
-                <a class="register-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
+                <a class="sign-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
                 
             </div>
           % endif
         % endif
         % if should_redirect_to_authn_mfe:
           <div class="mobile-nav-item hidden-mobile nav-item">
-              <a class="sign-in-btn btn" href="${settings.AUTHN_MICROFRONTEND_URL}/register${login_query()}">Sign up</a>
+              <a class="register-btn btn" href="${settings.AUTHN_MICROFRONTEND_URL}/register${login_query()}">Sign up</a>
               
           </div>
         % else:
