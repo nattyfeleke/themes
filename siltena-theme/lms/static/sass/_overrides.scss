@@ -472,12 +472,7 @@ padding: 40px 20px;
   padding: 0 80px;
   background-color: #f2f0ef; 
 }
-.courses-container .courses .course .course-info {
-  height: 152px;
-}
-.courses-container .courses .course .course-info .course-date {
-  line-height: 0px;
-}
+
 @media screen and (max-width: 556px){
   .courses-container {
 padding: 0 40px;
@@ -531,7 +526,7 @@ ul.courses-listing {
 }
 
 .courses-container .courses .course .course-info {
-  height: 144px;
+  height: 152px;
   font-family: arial;
 }
 .courses-container .courses .course .course-info .course-title {
@@ -542,7 +537,7 @@ ul.courses-listing {
   color: #000;
 }
 .courses-container .courses .course .course-info .course-date {
-  line-height: 22px;
+  line-height: 0px;
   padding: 2px 15px;
 }
 
