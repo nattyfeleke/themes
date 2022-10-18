@@ -450,8 +450,9 @@ padding: 40px 20px;
 }
 #learn-teach .holder .learn {
   margin-top: 10px;
-  width: 160px;
-  padding: 10px;
+  width: fit-content;
+  display: table;
+  padding: 8px 16px;
   border: 1px solid white;
   background-color: transparent;
   transition: background-color 0.5s;
@@ -470,6 +471,12 @@ padding: 40px 20px;
 .courses-container {
   padding: 0 80px;
   background-color: #f2f0ef; 
+}
+.courses-container .courses .course .course-info {
+  height: 152px;
+}
+.courses-container .courses .course .course-info .course-date {
+  line-height: 0px;
 }
 @media screen and (max-width: 556px){
   .courses-container {
