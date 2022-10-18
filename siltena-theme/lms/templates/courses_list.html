@@ -7,7 +7,6 @@
 
     % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
       <section class="courses">
-        <h1 class="featured">Explore Our Courses</h1>
         <ul class="courses-listing">
           ## limiting the course number by using HOMEPAGE_COURSE_MAX as the maximum number of courses
           %for course in courses[:4]:
@@ -18,7 +17,7 @@
         </ul>
       </section>
     ## in case there are courses that are not shown on the homepage, a 'View all Courses' link should appear
-      % if homepage_course_max and len(courses) > 4:
+      % if 1 == 1 and len(courses) > 4:
       <div class="courses-more">
         <a class="courses-more-cta" href="${marketing_link('COURSES')}"> ${_("View all Courses")} </a>
       </div>
